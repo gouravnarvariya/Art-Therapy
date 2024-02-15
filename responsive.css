@@ -1,0 +1,196 @@
+@media (max-width: 600px) { 
+    .container {
+        padding: 0px 20px;
+    }
+    .banner-image {
+        background-image: none;
+    }
+    .nav-section img {
+        width: 40%;
+    }
+    .toggle-menu {
+        width: 100%;
+        display: block;
+      }
+      .toggle-menu i {
+        width: 100%;
+        color: #ededed;
+        font-size: 1.8rem;
+      }
+    
+      .navbar-ul-flex {
+        display: none;
+      }
+      .navbar-btn-flex {
+        padding: 5vw;
+        background-color: #f23521;
+        border-radius: 35px;
+      }
+    
+      .show-navbar {
+        position: absolute;
+        width: 100%;
+        top: 10%;
+        left: 0%;
+        z-index: 100;
+      }
+    
+      .show-navbar-ul li {
+        padding: 15px 20px;
+        color: #5a5a5a;
+        background-color: white;
+      }
+      .show-navbar-ul li + li {
+        border-top: 1px solid rgb(189, 182, 182);
+      }
+      .showNavbar {
+        display: block !important;
+      }
+    
+      .navbar-flex {
+        justify-content: space-around;
+        gap: 20px;
+    }
+    nav {
+        display: none;
+    }
+
+
+.hero-flex {
+    margin-top: 50px;
+}
+.hero-text-div h1 {
+    font-size: 2.4rem;
+    margin-top: 40px; }
+    .hero-text-div h1 span {
+        font-size: 4rem;
+    }
+
+.therapy-inner-div {
+    flex: 0 0 46%;
+    display: flex;
+    gap: 10px;
+}
+.therapy-flex { 
+    width: 100%;}
+
+    .hero-text-div button {
+        width: 100%;
+    }
+    .quote {
+        font-size: .9rem;
+        line-height: 35px;
+        padding-bottom: 15px;
+    }
+    .quote-text-span em {
+        font-size: 1rem;
+    }
+    .quote-name {
+        margin-top: 15px;
+        font-size: 2rem;
+    }
+    .welcome-section { 
+        background-image: none;
+    min-height: 750px;
+    }
+
+        .welcome-div {
+            flex-direction: column;
+            padding-top: 40px;
+            gap: 30px;
+        }
+        .welcome-heading-wrapper {
+            width: 100%;
+        }
+        .heading {
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+        .welcome-heading-wrapper img {
+            display: none;
+        }
+        .paragraph {
+            font-size: 1rem;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+        .welcome-image-wrapper {
+            margin-top: 20px;
+        }
+        .welcome-image-wrapper img+img {
+            display: none;
+        }
+        .services-text {
+            font-size: 1rem;
+        }
+        .help-section {
+            margin-top: 70px;
+        }
+        .heading.services {
+            left: 0px;
+        }
+        .list {
+            left: 0px;
+        }
+
+.heading.services.two {
+    margin-top: 0px;
+}
+.appointment-div {
+    flex-direction: column;
+    gap: 20px;
+}
+.appointment-section {
+    max-height: 345px;
+    background-image: url("https://assets-global.website-files.com/62ef010408977750395b517c/62ef75cb043a3627e6f882e5_bg_cta_flower.png");
+    background-position: 0 0;
+    padding: 30px 0px;
+}
+.appointment-text {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.text-span-3 {
+    font-size: 1.2rem;
+}
+.appointment-div button {
+    border: none;
+    width: 100%;}
+
+    .contact-section {
+        background-image: none;
+        min-height: 600px;
+    }
+    .text-span-4 {
+        font-size: 3rem;
+    }
+    .form {
+        min-width: 100%;
+        gap: 20px;
+    }
+    .location-div {
+        padding: 20px 0px;
+    }
+    .paragraph-3 {
+        font-size: 1rem;
+        line-height: 25px;
+    }
+    .text-block-3 {
+        text-align: center;
+    }
+    .hero-flex {
+        flex-direction: column-reverse;
+    padding-bottom: 50px;
+    }
+
+
+.quote-div {
+    width: 100%;
+}
+        
+        .help-and-methods-div { 
+            flex-direction: column;}
+           
+            
+}
