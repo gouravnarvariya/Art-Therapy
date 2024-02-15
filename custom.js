@@ -1,8 +1,10 @@
 const toggleMenu = document.querySelector(".toggle-menu")
 const showBar = document.querySelector(".hiddenNavbar")
+const navbarbtnflex = document.querySelector(".navbar-btn-flex") 
 toggleMenu.addEventListener('click',()=>{
     console.log("hello")
     showBar.classList.toggle("showNavbar")
+    navbarbtnflex.classList.toggle("changeColor")
 })
 
   function submitForm() {
@@ -24,3 +26,4 @@ toggleMenu.addEventListener('click',()=>{
         console.error("Error adding document: ", error);
     });
 }
+

@@ -608,8 +608,15 @@ body {
     display: none;
   }
 
-  .hiddenNavbar {
+  /* .hiddenNavbar {
     display: none;
+  } */
+  .hiddenNavbar {
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    background-color: var(--secondary-color);
+    transition: left 1.3s ease-in-out;
   }
 
 

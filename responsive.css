@@ -17,35 +17,44 @@
         color: #ededed;
         font-size: 1.8rem;
       }
-    
-      .navbar-ul-flex {
-        display: none;
+
+      .hiddenNavbar {
+        position: absolute;
+        left: -100%;
+        width: 100%;
+        background-color: var(--secondary-color);
+        transition: left 0.3s ease-in-out;
       }
       .navbar-btn-flex {
         padding: 5vw;
-        background-color: #f23521;
+        background-color: var(--text-color);
         border-radius: 35px;
       }
     
-      .show-navbar {
-        position: absolute;
-        width: 100%;
-        top: 10%;
-        left: 0%;
-        z-index: 100;
-      }
+      .show-navbar-ul li:hover {
+        color: var(--text-color); }
     
+        .show-navbar-ul li:hover {
+            background: var(--text-color);
+            color: white;
+        }
+
       .show-navbar-ul li {
         padding: 15px 20px;
-        color: #5a5a5a;
-        background-color: white;
+        color: white;
       }
-      .show-navbar-ul li + li {
-        border-top: 1px solid rgb(189, 182, 182);
+      ul.show-navbar-ul {
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+      .changeColor {
+        background-color: var(--secondary-color);
       }
-      .showNavbar {
-        display: block !important;
-      }
+       .showNavbar {
+        left: 0;  
+        margin-top: 10px;
+    } 
     
       .navbar-flex {
         justify-content: space-around;
