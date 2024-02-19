@@ -1,12 +1,15 @@
 * {
     box-sizing: border-box;
     font-size: 1rem;
-    font-family: "Barlow" ,"Allura" ;
+    /* font-family: "Barlow" ,"Allura", "Palatino Linotype" ; */
+    
     }
   body {
     margin: 0px;
     background-color: #ffffff;
     font-weight: normal;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    
   }
   h1,
   h2,
@@ -15,7 +18,7 @@
   h6,
   h5 {
     margin: 0px;
-    font-family: "Borwal";
+    /* font-family: "Borwal"; */
     font-weight: 600;
   }
   p {
@@ -59,8 +62,12 @@
   }
 
   :root {
-    --text-color:  #DF7182;
-    --secondary-color: #818b77;
+    --text-color : #ca2222;
+    /* --text-color:  #DF7182; */
+    /* --secondary-color: #818b77; */
+    --secondary-color : #f1c5c5;
+    --background-color : #f2f1f1;
+    --light-color : #db3e3e;
     --ivory: #f5f2ed;
     --light-sec: #929c88;
     --dark: rgb(45, 69, 21);
@@ -71,19 +78,24 @@
 }
 
 body {
-    background-color: var(--ivory);
+    /* background-color: var(--ivory);
+     */
+     background-image: url(./Images/bgPattern.jpg);
+     position: relative;
+    z-index: 1000;
+    background-repeat: repeat;
 }
 
 
   /* banner-section banner-section banner-section banner-section banner-section */
 
   .banner-image {
-    min-height: 900px;
-    background-image: url("https://assets-global.website-files.com/62ef010408977750395b517c/62ef065fd64065e1a0b85d3f_bg_hero_floatingshape.svg"), 
+    min-height: 800px;
+    /* background-image: url("https://assets-global.website-files.com/62ef010408977750395b517c/62ef065fd64065e1a0b85d3f_bg_hero_floatingshape.svg"), 
     url("https://assets-global.website-files.com/62ef010408977750395b517c/62ef065fcaeb353555e1add0_bg_hero_cta.svg"),
      url("https://assets-global.website-files.com/62ef010408977750395b517c/62ef2aec5cac0a2fcd71c7af_bg_hero_cornerblock.svg"), 
      url("https://assets-global.website-files.com/62ef010408977750395b517c/62ef071b08977713f15b964f_bg_hero_beigeblock.svg");
-     background-position: 100% 0, 50% 100%, 0 100%, 100% 100%;
+     background-position: 100% 0, 50% 100%, 0 100%, 100% 100%; */
      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
      background-size: auto, auto, auto 200px, auto;
      display: block;
@@ -131,6 +143,18 @@ body {
     display: flex;
     gap: 10px;
     margin-top: 100px;
+  }
+
+  .hero-text-div {
+    flex: 0 0 49%;
+}
+    
+.hero-img-wrapper {
+    flex: 0 0 49%;
+}
+
+  .hero-img-wrapper img {
+    border-radius: 50%;
   }
 
   .hero-text-div h1 {
@@ -191,8 +215,8 @@ body {
 /* quote-section quote-section quote-section quote-section quote-section */
 
 .quote-section {
-    background-color: var(--secondary-color);
-    background-image: url("https://assets-global.website-files.com/62ef010408977750395b517c/62ef065f5cac0aabc1703949_bg_quote_shape.svg");
+    background-color: var(--background-color);
+    /* background-image: url("https://assets-global.website-files.com/62ef010408977750395b517c/62ef065f5cac0aabc1703949_bg_quote_shape.svg"); */
     background-position: 100% 100%;
     background-size: auto;
     background-repeat: no-repeat;
@@ -201,13 +225,13 @@ body {
 .quote-div {
     padding: 75px 0px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
-    width: 65%;
+    width: 100%;
 }
 
 .quote {
-    color: var(--white);
+    color: var(--text-color);
     text-align: center;
     padding-bottom: 36px;
     font-family: Barlow Condensed, sans-serif;

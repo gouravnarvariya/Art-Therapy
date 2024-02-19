@@ -196,6 +196,11 @@
 
 .quote-div {
     width: 100%;
+    flex-direction: column;
+    padding: 50px 0px;
+}
+.quote-image-div img {
+    height: 300px;
 }
         
         .help-and-methods-div { 
