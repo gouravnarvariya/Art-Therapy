@@ -512,7 +512,7 @@ body {
 }
 
 .text-span-4 {
-    color: var(--misty-blush);
+    color: var(--text-color);
     font-family: "Allura";
     font-size: 3.5rem;
 }  
@@ -525,7 +525,7 @@ body {
 }
 
 .text-span-5 {
-    color: var(--misty-blush);
+    color: var(--text-color);
     font-size: 20px;
     font-weight: 600;
 }
