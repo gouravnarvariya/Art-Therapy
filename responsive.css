@@ -224,4 +224,7 @@
     flex-direction: column;
     gap: 10px;
 }
+.location-icon {
+    width: 20%;
+}
 }
