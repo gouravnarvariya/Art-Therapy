@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mindfulbloomaz</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,17 +21,17 @@
     <link rel="stylesheet" href="responsive.css" />
 </head>
 <body>
-    <div class="banner-section">
+    <div id="home-click" class="banner-section">
         <div class="banner-image">
             <div class="nav-section container">
                 <img src="./Images/The ART Trajectory.png" alt="logo">
                 <nav>
-                    <a>Home</a>
-                    <a>Meet the team</a>
-                    <a>FAQ</a>
+                    <a href="#home-click">Home</a>
+                    <a href="./MeetTeam.html">Meet the team</a>
+                    <a href="./Faq.html">FAQ</a>
                     <a>+33423423423423</a>
                     <a class="client-portal">Client Portal</a>
-                    <a class="book-appoinment" >Book an Appointment</a>
+                    <a href="#contact" class="book-appoinment" >Book an Appointment</a>
                 </nav>
                 <div class="navbar-btn-flex">
                 <div class="toggle-menu">
@@ -57,24 +61,24 @@
                         <div class="therapy-flex">
                             <div class="therapy-inner-div">
                                 <img src="https://assets-global.website-files.com/62ef010408977750395b517c/62ef065f1cef285fff21a9fb_ic_bullet_lotus.svg" loading="lazy" alt="Lotus icon"/>
-                                <div class="hero-bullet">Child Therapy</div>
+                                <div class="hero-bullet">Online-program</div>
                             </div>
                             <div class="therapy-inner-div">
                                 <img src="https://assets-global.website-files.com/62ef010408977750395b517c/62ef065f1cef285fff21a9fb_ic_bullet_lotus.svg" loading="lazy" alt="Lotus icon"/>
-                                <div class="hero-bullet">Individual Therapy</div>
+                                <div class="hero-bullet">Offline-program</div>
                             </div>
                             <div class="therapy-inner-div">
                                 <img src="https://assets-global.website-files.com/62ef010408977750395b517c/62ef065f1cef285fff21a9fb_ic_bullet_lotus.svg" loading="lazy" alt="Lotus icon"/>
-                                <div class="hero-bullet">Couples Therapy</div>
+                                <div class="hero-bullet">One-On-One</div>
                             </div>
                             <div class="therapy-inner-div">
                                 <img src="https://assets-global.website-files.com/62ef010408977750395b517c/62ef065f1cef285fff21a9fb_ic_bullet_lotus.svg" loading="lazy" alt="Lotus icon"/>
-                                <div class="hero-bullet">Family Therapy</div>
+                                <div class="hero-bullet">Customised group</div>
                             </div>
                         </div>
                         <button>Connect Now</button> 
                     </div>
-                    <div class="hero-img-wrapper">
+                    <div  class="hero-img-wrapper">
                         <img src="./Images/brain no bg.png" alt="Meditating Woman" class="image-19"/>
                     </div>
                 </div>
@@ -83,10 +87,10 @@
     </div>
     <div class="quote-section">
         <div class="container quote-div">
-            <div class="quote-image-div">
-                <img src="./Images/leftSide.png" alt="left side">
+            <div class="quote-image-div left animate__animated  ">
+                <img src="./Images/rightSide.png" alt="left side">
             </div>
-            <div>
+            <div class="quote-container">
                 <p class="quote">
                     Only when we are brave enough to 
                     <span class="quote-text-span">
@@ -101,8 +105,8 @@
                 <img src="https://assets-global.website-files.com/62ef010408977750395b517c/62ef126fd05b792e5701e2f1_quote_line.svg" alt="Line" />
                 <p class="quote-name">Brené Brown</p>
             </div>
-            <div class="quote-image-div">
-                <img  src="./Images/rightSide.png" alt="left side">
+            <div class="quote-image-div right animate__animated ">
+                <img  src="./Images/leftSide.png" alt="right side">
             </div>
          
         </div>
@@ -141,19 +145,19 @@
                 <div class="services-wrapper">
                     <div>
                         <img src="https://assets-global.website-files.com/62ef010408977750395b517c/62ef66c3d05b793ba20572f4_child_therapy.svg" alt="Child therapy icon"/>
-                        <div class="services-text">Child Therapy</div>
+                        <div class="services-text">Online Program </div>
                     </div>
                     <div class="div-block-4">
                         <img src="https://assets-global.website-files.com/62ef010408977750395b517c/62ef66c20897776bd95fe74c_individual_therapy.svg"  alt="Individual Thera-17"/>
-                        <div class="services-text">Individual Therapy</div>
+                        <div class="services-text">Offline Program</div>
                     </div>
                     <div>
                         <img src="https://assets-global.website-files.com/62ef010408977750395b517c/62ef66c37ed5f47293cbed51_couples_therapy.svg"  alt="Couples therapy"/>
-                        <div class="services-text">Couples Therapy</div>
+                        <div class="services-text">One-On-One</div>
                     </div>
                     <div class="div-block-5">
                         <img src="https://assets-global.website-files.com/62ef010408977750395b517c/62ef66c21cef28371e25fd61_family_therapy.svg"  alt="Family Therapy" />
-                        <div class="services-text">Family Therapy</div>
+                        <div class="services-text">Customised group</div>
                     </div>
                 </div>
             </div>
@@ -219,7 +223,7 @@
             
      </div>
     </div>
-    <div class="contact-section">
+    <div id="contact" class="contact-section">
         <div class="container">
             <div class="contact-div">
                 <div class="form-block w-form">

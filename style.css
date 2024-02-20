@@ -70,7 +70,7 @@
     --light-color : #db3e3e;
     --ivory: #f5f2ed;
     --light-sec: #929c88;
-    --dark: rgb(45, 69, 21);
+    --dark: #212121;
     --dim-grey: #565656;
     --white: white;
     --pale-violet-red: #df7182;
@@ -110,6 +110,10 @@ body {
 
   .nav-section img {
     width: 20%;
+  }
+
+  .logo-a img {
+    width: 70%;
   }
 
   .nav-section nav a {
@@ -154,7 +158,7 @@ body {
 }
 
   .hero-img-wrapper img {
-    border-radius: 50%;
+    /* border-radius: 50%; */
   }
 
   .hero-text-div h1 {
@@ -244,6 +248,13 @@ body {
     margin-top: 26px;
     font-family: "Allura";
     font-size: 3rem;
+}
+
+.quote-container {
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .quote-text-span em {
@@ -644,6 +655,201 @@ body {
   }
 
 
+  /* team-div team-div team-div team-div team-div team-div team-div */
+
+  .team-div {
+    margin-top: 100px;
+  }
+
+  .h1-team {
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.text-span-10 {
+    color: var(--sage);
+    font-family: "Allura";
+    font-size: 5rem;
+    color: var(--secondary-color);
+
+}
+
+.team-member {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+
+.team-member-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.team-member-text {
+    color: var(--dark);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text-span-11 {
+    color: var(--dim-grey);
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.text-span-12 {
+    color: var(--secondary-color);
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.text-span-13 {
+    color: var(--dim-grey);
+    background-image: url("https://assets-global.website-files.com/62ef010408977750395b517c/62f361c50d180f689e1158c3_team_ic_location.svg");
+    background-position: 20% 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+   text-align: center;
+}
+
+.text-span-13 span {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
 
 
+}
+.text-team-link {
+    outline-offset: 0px;
+    color: var(--light-sec);
+    padding-top: 0;
+    font-size: 2.5rem;
+    font-family: "Allura";
+
+}
  
+
+
+/*  Style for the accordion FAQ Style for the accordion faq Style for the accordion FAQ */
+
+
+  .accordion-section {
+    border-top: 1px solid #ccc;
+    padding: 10px 0px;
+    overflow: hidden;
+  }
+
+  .accordion-header {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: normal;
+    line-height: 28px;
+    font-size: 1.4rem;
+  }
+
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 10px;
+    color: var(--dim-grey);
+    margin-top: 0;
+    font-size: 1.1rem;
+    line-height: 30px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+
+  }
+
+  .accordion-section.open .accordion-content {
+    max-height: 1000px; /* Adjust based on your content height */
+    max-height: 1000px; /* Adjust based on your content height */
+    padding: 10px;
+  }
+
+  .accordion-section.open .accordion-header {
+     /* Adjust background color when open */
+
+  }
+
+  .caret {
+    transition: transform 0.3s ease;
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+  }
+
+  .accordion-section.open .caret {
+    transform: rotate(180deg);
+  }
+
+  .accordion-flex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+  }
+
+  .accordion {
+    flex: 0 0 48%;
+  }
+
+  .accored-image-div {
+    flex: 0 0 48%;
+  }
+
+/* member 1  member 1   member 1   member 1   member 1   member 1 member 1  */
+
+  .color-sec {
+    color: var(--secondary-color);
+   
+  }
+
+  .member-div-flex {
+    display: flex;
+    padding: 100px 0px;
+}
+
+.member-image-div {
+    flex: 0 0 49%;
+}
+
+.member-data-div h1 {
+    color: var(--sage);
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 5rem;
+    font-family: "Allura";
+    color: var(--secondary-color);
+}
+
+.member-1-text-add {
+align-items: flex-start;
+    
+}
+
+.member-data-div p {
+    color: var(--dim-grey);
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+    line-height: 30px;
+}
+
+.text-span-13-edit {
+    background-position: 0 50%;
+}

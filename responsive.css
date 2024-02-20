@@ -203,10 +203,21 @@
     height: 300px;
 }
         
-        .help-and-methods-div { 
-            flex-direction: column;}
-           
-            .welcome-text-wrapper {
-                width: 100%;
-            }
+.help-and-methods-div { 
+    flex-direction: column;
+}
+.welcome-text-wrapper {
+    width: 100%;
+}
+.accordion-flex {
+    flex-direction: column;
+}
+.team-member {
+    flex-direction: column;
+    gap: 30px;
+} 
+.member-div-flex {
+    flex-direction: column;
+    gap: 10px;
+}
 }

@@ -27,3 +27,15 @@ toggleMenu.addEventListener('click',()=>{
     });
 }
 
+document.addEventListener('scroll', function() {
+    var scrollHeight = window.scrollY;
+    console.log(scrollHeight)
+    if (scrollHeight >= 800) {
+      document.querySelector('.left').classList.add('animate__slideInLeft');
+      document.querySelector('.right').classList.add('animate__slideInRight');
+
+    } else {
+        document.querySelector('.left').classList.remove('animate__slideInLeft');
+        document.querySelector('.right').classList.remove('animate__slideInRight');
+    }
+  });
