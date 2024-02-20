@@ -492,9 +492,11 @@ body {
 
 .contact-section {
     min-height: 700px;
-    background-color: var(--light-sec);
-    color: white;
-    background-image: url("https://assets-global.website-files.com/62ef010408977750395b517c/62f0bdf85cac0a4c5d877c67_footer_bg_bottomright.png"), url("https://assets-global.website-files.com/62ef010408977750395b517c/62f0bdf760843fc17d4f4c4e_footer_bg_topleft.png");
+    /* background-color: var(--light-sec);
+    color: white; */
+    background-color: #EBEBEB;
+    color: #272725;
+    /* background-image: url("https://assets-global.website-files.com/62ef010408977750395b517c/62f0bdf85cac0a4c5d877c67_footer_bg_bottomright.png"), url("https://assets-global.website-files.com/62ef010408977750395b517c/62f0bdf760843fc17d4f4c4e_footer_bg_topleft.png"); */
     background-position: 100% 100%, 0 0;
     background-repeat: no-repeat, no-repeat;
     background-size: auto, auto;
@@ -517,7 +519,8 @@ body {
 
 .paragraph.contact {
     max-width: 750px;
-    color: white;
+    /* color: white; */
+    color: #272725;
     text-align: center;
 }
 
@@ -551,7 +554,8 @@ body {
 
 .footer-section {
     outline-offset: 0px;
-    background-color: #747a6e;
+    /* background-color: #747a6e; */
+    background-color: #D2D2D2;
     outline: 3px #333;
 }
 
@@ -559,6 +563,20 @@ body {
     display: flex;
     gap: 20px;
     padding: 30px 0px;
+}
+
+.location-icon {
+    background: var(--background-color);
+    border-radius: 50%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-icon i {
+font-size: 2rem;
+color: var(--text-color);
 }
 
 .grid-7 {
@@ -576,7 +594,9 @@ body {
 }
 
 .paragraph-3 {
-    color: var(--white);
+    /* color: var(--white); */
+    color: #272725;
+
     align-self: center;
     margin-left: 30px;
     font-family: Barlow, sans-serif;
@@ -585,7 +605,8 @@ body {
 }
 
 .text-span-6 {
-    color: var(--misty-blush);
+    /* color: var(--misty-blush); */
+    color: #272725;
     font-weight: 600;
 }
 
@@ -609,14 +630,16 @@ body {
 }
 
 .text-block-3 {
-    color: var(--white);
+    /* color: var(--white); */
+    color: #272725;
     font-family: Barlow, sans-serif;
     font-size: 16px;
     line-height: 32px;
 }
 
 .text-span-7 {
-    color: var(--misty-blush);
+    /* color: var(--misty-blush); */
+    color: #272725;
     font-weight: 600;
 }
 
