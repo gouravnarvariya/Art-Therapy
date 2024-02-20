@@ -48,6 +48,10 @@
         padding: 10px 0px;
     }
 
+    ul.show-navbar-ul li a {
+        color: #ededed;
+    }
+
       .changeColor {
         background-color: var(--secondary-color);
       }
