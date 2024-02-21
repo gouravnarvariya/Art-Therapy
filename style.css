@@ -1,15 +1,23 @@
 * {
-    box-sizing: border-box;
-    font-size: 1rem;
-    /* font-family: "Barlow" ,"Allura", "Palatino Linotype" ; */
-    
-    }
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  /* Fallback fonts in case Palatino Linotype is not available */
+}
+
+@font-face {
+  font-family: 'Palatino Linotype';
+  src: url('./Palatino\ Linotype') format('woff2'),
+       url('./Palatino\ Linotype/') format('woff');
+  /* Add other font formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+
   body {
     margin: 0px;
     background-color: #ffffff;
     font-weight: normal;
-    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-    
   }
   h1,
   h2,
@@ -18,7 +26,6 @@
   h6,
   h5 {
     margin: 0px;
-    /* font-family: "Borwal"; */
     font-weight: 600;
   }
   p {
@@ -147,6 +154,7 @@ body {
     display: flex;
     gap: 10px;
     margin-top: 100px;
+    align-items: center;
   }
 
   .hero-text-div {
@@ -170,10 +178,10 @@ body {
   }
 
   .hero-text-div h1 span {
-    color: var(--secondary-color);
+    color: var(--text-color);
     font-size: 5rem;
     font-weight: 800;
-    font-family:  "allura";
+    font-family:  "Allura";
 }
 
   .paragraph {
@@ -193,7 +201,7 @@ body {
 }
 
 .therapy-inner-div {
-    flex: 0 0 48%;
+   width: 100%;
     display: flex;
     gap: 10px;
 }
@@ -219,7 +227,7 @@ body {
 /* quote-section quote-section quote-section quote-section quote-section */
 
 .quote-section {
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
     /* background-image: url("https://assets-global.website-files.com/62ef010408977750395b517c/62ef065f5cac0aabc1703949_bg_quote_shape.svg"); */
     background-position: 100% 100%;
     background-size: auto;
@@ -235,10 +243,8 @@ body {
 }
 
 .quote {
-    color: var(--text-color);
     text-align: center;
     padding-bottom: 36px;
-    font-family: Barlow Condensed, sans-serif;
     font-size: 2.3rem;
     line-height: 52px;
 }
@@ -257,9 +263,17 @@ body {
     align-items: center;
 }
 
+.quote-image-div {
+  flex:  0 0 30%;
+ 
+}
+
+.quote-image-div img {
+  height: 450px;
+}
+
 .quote-text-span em {
-    color: var(--misty-blush);
-    text-decoration: underline;
+    color: var(--text-color);
     font-size: 2.3rem;
     padding-right: 10px;
 }
@@ -876,3 +890,12 @@ align-items: flex-start;
 .text-span-13-edit {
     background-position: 0 50%;
 }
+
+
+
+        .slider {
+            display: flex;
+            text-align: center;
+            color: black;
+            white-space: nowrap;
+        }
