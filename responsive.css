@@ -22,7 +22,8 @@
         position: absolute;
         left: -100%;
         width: 100%;
-        background-color: var(--secondary-color);
+        /* background-color: var(--secondary-color); */
+        background-color: #EBEBEB;
         transition: left 0.3s ease-in-out;
       }
       .navbar-btn-flex {
@@ -49,11 +50,16 @@
     }
 
     ul.show-navbar-ul li a {
-        color: #ededed;
+        /* color: #ededed; */
+        color: #272725;
+        
     }
 
       .changeColor {
-        background-color: var(--secondary-color);
+        /* background-color: var(--secondary-color); */
+        /* background-color: #EBEBEB; */
+        background-color: #D2D2D2;
+
       }
        .showNavbar {
         left: 0;  
