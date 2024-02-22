@@ -6,7 +6,7 @@
         background-image: none;
     }
     .nav-section img {
-        width: 40%;
+        width: 60%;
     }
     .toggle-menu {
         width: 100%;
@@ -47,6 +47,7 @@
       ul.show-navbar-ul {
         text-align: center;
         padding: 10px 0px;
+        width: 100%;
     }
 
     ul.show-navbar-ul li a {
@@ -63,7 +64,8 @@
       }
        .showNavbar {
         left: 0;  
-        margin-top: 10px;
+        top: 100px;
+
     } 
     
       .navbar-flex {
@@ -233,5 +235,18 @@
 .location-icon {
     width: 100px;
     height: 100px;
+}
+.navbar-btn-flex {
+    visibility: visible;
+}
+
+.quote-text-div {
+    margin: 25px 0px;
+}
+.div-methods-img img {
+    margin-top: 30px;
+}
+.nav-flex-1 {
+    display: flex;
 }
 }

@@ -4,6 +4,13 @@
     /* font-family: "Barlow" ,"Allura", "Palatino Linotype" ; */
     
     }
+
+    @font-face {
+      font-family: 'Papyrus';
+      src: url('./papyrus/PAPYRUS.TTF') format('truetype'); /* Adjust the path and format accordingly */
+      font-weight: normal;
+      font-style: normal;
+    }
   body {
     margin: 0px;
     background-color: #ffffff;
@@ -75,6 +82,7 @@
     --white: white;
     --pale-violet-red: #df7182;
     --misty-blush: #f6cec7;
+    --font-italic : "Allura"
 }
 
 body {
@@ -102,10 +110,26 @@ body {
   }
 
   .nav-section {
+    display: none;
+    padding: 25px 0px;
+    background-color: #EBEBEB;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0px;
+  }
+
+  .nav-section div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
+  }
+  .navbar-btn-flex {
+    visibility: hidden;
+}
+
+  .nav-flex-1 {
+    display: block;
   }
 
   .nav-section img {
@@ -151,6 +175,9 @@ body {
 
   .hero-text-div {
     flex: 0 0 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
     
 .hero-img-wrapper {
@@ -165,23 +192,25 @@ body {
     margin-top: 80px;
     margin-bottom: 6px;
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 100;
     line-height: 5rem;
+    font-family: "Cagliostro", sans-serif;
   }
+  
 
   .hero-text-div h1 span {
-    color: var(--secondary-color);
-    font-size: 5rem;
-    font-weight: 800;
-    font-family:  "allura";
+    color: var(--text-color);
+    font-size: 3rem;
+
 }
 
-  .paragraph {
-    color: var(--dim-grey);
+  .paragraph-1 {
     margin-top: 0;
-    margin-bottom: 30px;
-    font-size: 1.1rem;
+    margin-bottom: 20px;
+    font-size: 2.1rem;
     line-height: 4rem;
+    font-family: "Papyrus";
+
 
 }
 
@@ -207,19 +236,19 @@ body {
     background-color: var(--text-color);
     color: white;
     border-radius: 50px;
-    margin-top: 35px;
+    /* margin-top: 35px; */
     padding: 15px 50px 17px;
     font-size: 1.1rem;
     font-weight: 500;
     transition: background-color .7s;
     border: none;
-    width: 40%;
+    width: 100%;
 }
 
 /* quote-section quote-section quote-section quote-section quote-section */
 
 .quote-section {
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
     /* background-image: url("https://assets-global.website-files.com/62ef010408977750395b517c/62ef065f5cac0aabc1703949_bg_quote_shape.svg"); */
     background-position: 100% 100%;
     background-size: auto;
@@ -257,11 +286,35 @@ body {
     align-items: center;
 }
 
+.quote-text-div {
+  text-align: center;
+}
+
+.quote-text-div h1 span {
+  color: var(--text-color);
+  font-size: 4rem;
+  font-family: var(--font-italic);
+}
+
 .quote-text-span em {
     color: var(--misty-blush);
     text-decoration: underline;
     font-size: 2.3rem;
     padding-right: 10px;
+}
+
+
+p.paragraph-quote {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 20px;
+}
+.quote-image-div {
+  flex: 0 0 30%;
+}
+
+.quote-image-div img {
+  height: 450px;
 }
 
 /* welcome-section welcome-section welcome-section welcome-section welcome-section */
@@ -320,6 +373,12 @@ body {
     margin-bottom: 30px;
     font-size: 1.1rem;
     line-height: 30px;
+    /* padding-left: 35px; */
+}
+
+.text-p-1 {
+  color: var(--text-color);
+  font-size: 2.1rem;
 }
 
 .p-highlight {
@@ -393,13 +452,23 @@ body {
     display: flex;
     gap: 2%;
     flex-wrap: wrap;
+    align-items: center;
 }
 .help-and-methods-div div {
     flex : 0 0 49%;
 }
 
+.div-help-img img {
+  border-radius: 10%;
+}
+
+.div-methods-img img {
+  margin-top: 100px;
+  border-radius: 10%;
+}
+
 .heading.services.two {
-    margin-top: 160px;
+    margin-top: 80px;
 }
 
 .heading.services {
@@ -442,7 +511,7 @@ body {
 .appointment-section {
     max-height: 245px;
     min-height: 245px;
-    background-color: #fcfbf9;
+    /* background-color: #fcfbf9; */
     background-image: url("https://assets-global.website-files.com/62ef010408977750395b517c/62ef75eb7ed5f463a1cc93fc_bg_cta_line.png"), url("https://assets-global.website-files.com/62ef010408977750395b517c/62ef75cb043a3627e6f882e5_bg_cta_flower.png");
     background-position: 100% 100%, 0 0;
     background-repeat: no-repeat, no-repeat;
@@ -545,9 +614,10 @@ body {
     background: var(--text-color);
     color: white;
     border-radius: 5px;
-    padding: 12px 12px;
+    padding: 25px 12px;
     resize: none;
-    
+    font-size: 1.3rem;
+
 }
 
 /* .section-footer .section-footer .section-footer .section-footer .section-footer */
@@ -758,7 +828,7 @@ color: var(--text-color);
 }
 .text-team-link {
     outline-offset: 0px;
-    color: var(--light-sec);
+    color: var(--text-color);
     padding-top: 0;
     font-size: 2.5rem;
     font-family: "Allura";
@@ -875,4 +945,63 @@ align-items: flex-start;
 
 .text-span-13-edit {
     background-position: 0 50%;
+}
+
+.slider {
+  overflow: hidden;
+  white-space: nowrap;
+  color: black;
+  font-size: 24px; /* Adjust the font size as needed */
+  text-align: center;
+  display: flex;
+  animation: slide 10s linear infinite;
+}
+
+.therapy-inner-div {
+  margin-right: 20px; /* Adjust the spacing between slides */
+  transition: opacity 1s ease-in-out;
+}
+
+.therapy-inner-div h1 img {
+  width: 10%;
+}
+
+
+
+
+
+
+.containerrr p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.containerrr p span.typed-text {
+  font-weight: normal;
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 5rem;
+  font-family: "Allura";
+}
+.containerrr p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  height: 3rem;
+  vertical-align: middle; /* Added to center the cursor vertically */
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.containerrr p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
 }
