@@ -15,7 +15,7 @@
       .toggle-menu i {
         width: 100%;
         color: #ededed;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
       }
 
       .hiddenNavbar {
@@ -27,7 +27,8 @@
         transition: left 0.3s ease-in-out;
       }
       .navbar-btn-flex {
-        padding: 5vw;
+        margin-right: 10px;
+        padding: 4vw;
         background-color: var(--text-color);
         border-radius: 35px;
       }
