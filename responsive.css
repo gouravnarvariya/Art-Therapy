@@ -15,7 +15,7 @@
       .toggle-menu i {
         width: 100%;
         color: #ededed;
-        font-size: 1.4rem;
+        font-size: 1rem;
       }
 
       .hiddenNavbar {
@@ -28,7 +28,7 @@
       }
       .navbar-btn-flex {
         margin-right: 10px;
-        padding: 4vw;
+        padding: 2vw;
         background-color: var(--text-color);
         border-radius: 35px;
       }
@@ -65,7 +65,7 @@
       }
        .showNavbar {
         left: 0;  
-        top: 100px;
+        top: 60px;
 
     } 
     
@@ -80,19 +80,22 @@
 
 .hero-flex {
     margin-top: 0px;
+    gap: 0px;
 }
 .hero-text-div {
     justify-content: center;
 }
 .hero-text-div h1 {
     font-size: 2.4rem;
-    margin-top: 0px; }
+    margin-top: 0px; 
+    line-height: 2rem;
+}
     .hero-text-div h1 span {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
     .paragraph-1 {
-        font-size: 1.5rem;
-        line-height: 3rem;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
         margin-bottom: 0px;
     }
     .containerrr p {
@@ -230,6 +233,7 @@
         flex-direction: column;
     padding-bottom: 0px;
     height: 100vh;
+    align-items: center;
     }
 
 
@@ -238,10 +242,10 @@
         flex-direction: column;
         padding: 0px 0px;
         height: 100%;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 .quote-image-div img {
-    height: 300px;
+    height: 100%;
 }
         
 .help-and-methods-div { 
@@ -284,9 +288,57 @@
 }
 .quote-text-div h1 span {
     font-size: 3rem;
+    line-height: 3rem;
 }
 .nav-section {
     padding: 15px 0px;
 }
+.connect-text-flex {
+    display: none;
+  }
+  .connect-text-flex-1 {
+    display: flex;
+    flex: 0 0 30%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 30%;
 
+  } 
+  .hero-text-div {
+    flex: 0 1 30%;
+    height: 30%;
+  }
+
+.hero-img-wrapper {
+    flex: 0 0 30%;
+    height: 30%;
+
+}
+.potential-div p {
+    font-size: 1.3rem;
+}
+.scroll-btn {
+    background-color: var(--text-color);
+    color: white;
+    border-radius: 50px;
+    /* margin-top: 35px; */
+    padding: 15px 50px 17px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background-color .7s;
+    border: none;
+    width: 100%;
+}
+.hero-img-wrapper img {
+    height: 100%;
+}
+.quote-image-div {
+    height: 30%;
+}
+.quote-container {
+    height: 30%;
+}
+p.paragraph-quote {
+    margin-top: 10px;
+}
 }
