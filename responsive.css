@@ -78,13 +78,37 @@
 
 
 .hero-flex {
-    margin-top: 50px;
+    margin-top: 0px;
+}
+.hero-text-div {
+    justify-content: center;
 }
 .hero-text-div h1 {
     font-size: 2.4rem;
-    margin-top: 40px; }
+    margin-top: 0px; }
     .hero-text-div h1 span {
-        font-size: 4rem;
+        font-size: 2rem;
+    }
+    .paragraph-1 {
+        font-size: 1.5rem;
+        line-height: 3rem;
+        margin-bottom: 0px;
+    }
+    .containerrr p {
+        font-size: 1rem;
+    }
+    .containerrr p span.typed-text {
+        font-size: 2.4rem;
+    }
+    .banner-image {
+        min-height: 100vh;}
+    .text-p-1 {
+        font-size: 1.5rem;
+    }
+    .connect-div {
+        width: 62%;
+    }.connect-text-flex {
+        flex-direction: column-reverse;
     }
 
 .therapy-inner-div {
@@ -182,6 +206,7 @@
     .contact-section {
         background-image: none;
         min-height: 600px;
+        padding: 20px 0px;
     }
     .text-span-4 {
         font-size: 3rem;
@@ -201,8 +226,9 @@
         text-align: center;
     }
     .hero-flex {
-        flex-direction: column-reverse;
-    padding-bottom: 50px;
+        flex-direction: column;
+    padding-bottom: 0px;
+    height: 100vh;
     }
 
 
@@ -241,12 +267,22 @@
 }
 
 .quote-text-div {
-    margin: 25px 0px;
+    margin: 10px 0px;
 }
 .div-methods-img img {
     margin-top: 30px;
 }
 .nav-flex-1 {
     display: flex;
+}
+.form button {
+    padding: 20px 12px;
+    margin-bottom: 20px;
+}
+.quote-text-div h1 span {
+    font-size: 3rem;
+}
+.nav-section {
+    padding: 15px 0px;
 }
 }

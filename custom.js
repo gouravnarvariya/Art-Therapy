@@ -6,15 +6,15 @@ document.addEventListener('scroll', function() {
     var screenSize = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     var leftElement = document.querySelector('.left');
     var rightElement = document.querySelector('.right');
-   
+   console.log(scrollHeight)
     if ((scrollHeight >= 800 && screenSize > 601) || (scrollHeight >= 700 && screenSize < 600)) {
         leftElement.classList.add('animate__fadeInLeft');
         rightElement.classList.add('animate__fadeInRight');
-        console.log("first");
+       
     } else {
         leftElement.classList.remove('animate__fadeInLeft');
         rightElement.classList.remove('animate__fadeInRight');
-        console.log("second");
+       
     }
 
     if ((scrollHeight >= 800 && screenSize > 601) || (scrollHeight >= 700 && screenSize < 600)) {
@@ -133,3 +133,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setInterval(showNextSlide, 2000); // Change slide every 2000 milliseconds (2 seconds)
 });
+
+
+
+
+
+
+
+
+

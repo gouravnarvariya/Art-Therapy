@@ -195,6 +195,7 @@ body {
   font-weight: 100;
   line-height: 5rem;
   font-family: "Cagliostro", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -210,10 +211,19 @@ body {
   font-size: 2.1rem;
   line-height: 4rem;
   font-family: "Papyrus";
-
-
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.connect-div {
+  width: 50%;
+}
+
+.connect-text-flex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
 .therapy-flex {
   display: flex;
   gap: 15px;
@@ -245,6 +255,11 @@ body {
   width: 100%;
 }
 
+.hero-text-div button a {
+  color: white;
+  font-size: 1.1rem;
+}
+
 /* quote-section quote-section quote-section quote-section quote-section */
 
 .quote-section {
@@ -253,6 +268,7 @@ body {
   background-position: 100% 100%;
   background-size: auto;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .quote-div {
@@ -1005,3 +1021,19 @@ animation: none;
 99% { background-color: transparent; }
 100%  { background-color: #ccc; }
 }
+
+
+
+
+.section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  scroll-snap-align: start;
+}
+
+
+
+

@@ -65,14 +65,16 @@
                             The
                             <span class="text-span-8">ART </span> Trajectory
                         </h1>
-                        <p class="paragraph-1">the art <span class="text-p-1">&</span> science people </p>
-
-                        <div class="connect-div">
-                            <button>Connect Now</button>
-                        </div>
-                        <div class="containerrr">
-                            <p><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-                          </div>
+                        <p class="paragraph-1">the art <span class="text-p-1">&</span> science of people </p>
+                            <div class="connect-text-flex">
+                                <div class="connect-div">
+                                    <button class="scroll-btn" onclick="scrollToSection('section1')">Connect Now</button>
+                                </div>
+                                <div class="containerrr">
+                                    <p><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+                                  </div>
+                            </div>
+                       
                     </div>
                     <div  class="hero-img-wrapper">
                         <img loading="lazy" src="./Images/brain no bg.png" alt="Meditating Woman" class="image-19"/>
@@ -202,7 +204,7 @@
             </div>
         </div>
     </section>
-    <section class="appointment-section">
+    <section  class="appointment-section">
         <div class="container">
             <div class="appointment-div">
                     <div class="appointment-text">
@@ -214,7 +216,7 @@
             
      </div>
     </section>
-    <section id="contact" class="contact-section">
+    <section id="section1"  class="contact-section section">
         <div class="container">
             <div class="contact-div">
                 <div class="form-block w-form">
@@ -290,5 +292,13 @@
     </div>
     </body>
     <script src="custom.js"></script>
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
 </body>
 </html>
