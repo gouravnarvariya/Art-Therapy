@@ -312,6 +312,7 @@
 .hero-img-wrapper {
     flex: 0 0 30%;
     height: 30%;
+    width: 100%;
 
 }
 .potential-div p {
@@ -329,8 +330,13 @@
     border: none;
     width: 100%;
 }
+/* .hero-img-wrapper img {
+    height: 100%;
+} */
 .hero-img-wrapper img {
     height: 100%;
+    object-fit: cover;
+    width: 100%;
 }
 .quote-image-div {
     height: 30%;
