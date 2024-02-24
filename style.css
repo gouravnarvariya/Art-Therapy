@@ -190,10 +190,10 @@ body {
 
 .hero-text-div h1 {
   margin-top: 80px;
-  margin-bottom: 6px;
+  /* margin-bottom: 6px; */
   font-size: 3rem;
   font-weight: 100;
-  line-height: 5rem;
+  line-height: 4rem;
   font-family: "Cagliostro", sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -208,7 +208,7 @@ body {
 .paragraph-1 {
   margin-top: 0;
   margin-bottom: 20px;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 2rem;
   font-family: "Papyrus";
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -1059,3 +1059,51 @@ animation: none;
 
 
 
+
+
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .panel p {
+  font-size: 6vw;
+}
+
+.red {
+  background: red;
+}
+
+.blue {
+  background: blue;
+}
+
+.green {
+  background: green;
+}
+
+.orange {
+  background: orange;
+} */
+
+.trigger {
+  height:100%;
+  width:100%;
+}

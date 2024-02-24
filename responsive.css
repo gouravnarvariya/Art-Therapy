@@ -242,7 +242,7 @@
         flex-direction: column;
         padding: 0px 0px;
         height: 100%;
-        justify-content: space-evenly;
+        justify-content: flex-end;
     }
 .quote-image-div img {
     height: 100%;
