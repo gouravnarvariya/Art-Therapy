@@ -114,6 +114,23 @@ toggleMenu.addEventListener('click',()=>{
 
 
 
+const lines = document.querySelectorAll('.potential-div p span');
+
+// Set initial visibility and opacity for each line
+lines.forEach((line, index) => {
+    gsap.set(line, { y: '100%', autoAlpha: 0 });
+});
+
+// Use GSAP to animate each line
+gsap.timeline({
+    scrollTrigger: {
+        trigger: '.potential-div',
+        start: 'top center',
+    }
+})
+    .staggerTo(lines, 1, { y: '0%', autoAlpha: 1, ease: 'power2.out' }, 0.5);
+
+
 
 
 
