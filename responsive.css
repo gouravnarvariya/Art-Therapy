@@ -28,7 +28,7 @@
       }
       .navbar-btn-flex {
         margin-right: 10px;
-        padding: 2vw;
+        padding: 2.5vw;
         background-color: var(--text-color);
         border-radius: 35px;
       }
@@ -104,6 +104,7 @@
     }
     .containerrr p span.typed-text {
         font-size: 2.4rem;
+        line-height: 2rem;
     }
     .banner-image {
         min-height: 100vh;}
@@ -116,13 +117,28 @@
         flex-direction: column-reverse;
     }
 
-.therapy-inner-div {
+/* .therapy-inner-div {
     flex: 0 0 46%;
     display: flex;
     gap: 10px;
+} */
+.therapy-inner-div {
+    flex: 0 0%;
+    display: flex;
+    gap: 10px;
+    margin-right: 0px;
 }
-.therapy-flex { 
-    width: 100%;}
+
+.therapy-inner-div img {
+
+}
+.therapy-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 90%;
+}
 
     .hero-text-div button {
         width: 100%;
@@ -311,8 +327,8 @@
   }
 
 .hero-img-wrapper {
-    flex: 0 0 30%;
-    height: 30%;
+    flex: 0 0 49%;
+    height: 49%;
     width: 100%;
 
 }
@@ -343,7 +359,8 @@
     height: 30%;
 }
 .quote-container {
-    height: 30%;
+    height: 28%;
+    justify-content: space-around;
 }
 p.paragraph-quote {
     margin-top: 10px;
@@ -356,4 +373,7 @@ p.paragraph-quote {
     font-weight: 500;
     color: var(--text-color);
 }
+.red-text {
+    color: red;
+  }
 }
