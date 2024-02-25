@@ -314,7 +314,7 @@
     margin-bottom: 20px;
 }
 .quote-text-div h1 span {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 2.2rem;
 }
 
@@ -370,10 +370,10 @@ h1.h1-hero {
     width: 100%;
 }
 .quote-image-div {
-    height: 30%;
+    height: 36%;
 }
 .quote-container {
-    height: 28%;
+    height: 18%;
     justify-content: space-around;
 }
 p.paragraph-quote {

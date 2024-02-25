@@ -21,35 +21,39 @@
     <link rel="stylesheet" href="responsive.css" />
 </head>
 <body>
-
-    <div class="banner-section">
+    <header id="home-click" class=" panel banner-section">
         <div class="banner-image">
-            <div class="nav-section container">
-              <a class="logo-a" href="./Index.html"> <img src="./Images/The ART Trajectory.png" alt="logo"></a> 
+
+            <nav class="nav-section animate__animated animate__fadeInDown '4s'">
+                <div class="container">
+                    <img loading="lazy" src="./Images/The ART Trajectory.png" alt="logo">
                 <nav>
-                    <a  href="./Index.html">Home</a>
-                    <a  >Meet the team</a>
-                    <a href="./f.html">FAQ</a>
+                    <a href="./Index.html">Home</a>
+                    <a href="./MeetTeam.html">Meet the team</a>
+                    <a href="./Faq.html">FAQ</a>
                     <a>+33423423423423</a>
                     <a class="client-portal">Client Portal</a>
-                    <a class="book-appoinment" >Book an Appointment</a>
+                    <a href="#contact" class="book-appoinment" >Book an Appointment</a>
                 </nav>
+                </div>
+                
+                
                 <div class="navbar-btn-flex">
                 <div class="toggle-menu">
                     <i class="fa-solid fa-bars"></i>
                   </div>
+                  <div class="show-navbar hiddenNavbar">
+                    <ul class="show-navbar-ul">
+                      <li><a href="./Index.html">Home</a></li>
+                      <li > <a href="./MeetTeam.html">Meet the team</a></li>
+                      <li ><a href="./Faq.html">FAQ</a></li>
+                      <li > <a>Client Portal</a>  </li>
+                      <li ><a>Book an Appointment</a></li>
+                      <li ><a>Contact</a></li>
+                    </ul>
+                  </div>
                   </div>    
-            </div>
-            <div class="show-navbar hiddenNavbar">
-                <ul class="show-navbar-ul">
-                    <li><a href="./Index.html">Home</a></li>
-                    <li > <a>Meet the team</a></li>
-                    <li ><a href="./Faq.html">FAQ</a></li>
-                    <li > <a>Client Portal</a>  </li>
-            <li ><a>Book an Appointment</a></li>
-            <li ><a>Contact</a></li>
-                </ul>
-              </div>
+            </nav>
             <div class="team-div container">
                 <h1 class="h1-team">Meet the
                     <span class="text-span-10" >Team</span>
@@ -96,8 +100,9 @@
                 </div>
                
             </div>
-        </div>
-    </div>
+        </div></header>
+
+         
     <div class="contact-section">
         <div class="container">
             <div class="contact-div">
@@ -172,6 +177,6 @@
             </div>
         </div>
 
-        <script src="custom.js"></script>
+        <script src="meet.js"></script>
 
     </body> 
