@@ -1046,9 +1046,21 @@ width: 10%;
 
 
 
+.therapy-flex-1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
 
-
-
+.impact-points{
+  opacity: 0;
+  /* transition: opacity 1s ease-in-out; */
+  font-size: 2.4rem;
+  font-family: 'Allura';
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
 
 
 

@@ -105,37 +105,37 @@ function submitForm() {
 // scroll feature vertical scroll feature vertical scroll feature vertical 
 
 
-gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(ScrollToPlugin);
+// gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollToPlugin);
 
-let sections = gsap.utils.toArray(".panel");
+// let sections = gsap.utils.toArray(".panel");
 
-function goToSection(i) {
-  gsap.to(window, {
-    scrollTo: { y: i * innerHeight, autoKill: false, ease: "Power3.easeInOut" },
-    duration: 1.5
-  });
-}
+// function goToSection(i) {
+//   gsap.to(window, {
+//     scrollTo: { y: i * innerHeight, autoKill: false, ease: "Power3.easeInOut" },
+//     duration: 1.5
+//   });
+// }
 
-ScrollTrigger.defaults({
-  // markers: true
-});
+// ScrollTrigger.defaults({
+//   // markers: true
+// });
 
 
-sections.forEach((eachPanel, i) => {
-  // const mainAnim = gsap.timeline({ paused: true });
+// sections.forEach((eachPanel, i) => {
+//   // const mainAnim = gsap.timeline({ paused: true });
 
-  ScrollTrigger.create({
-    trigger: eachPanel,
-    onEnter: () => goToSection(i)
-  });
+//   ScrollTrigger.create({
+//     trigger: eachPanel,
+//     onEnter: () => goToSection(i)
+//   });
 
-  ScrollTrigger.create({
-    trigger: eachPanel,
-    start: "bottom bottom",
-    onEnterBack: () => goToSection(i)
-  });
-});
+//   ScrollTrigger.create({
+//     trigger: eachPanel,
+//     start: "bottom bottom",
+//     onEnterBack: () => goToSection(i)
+//   });
+// });
 
 
 
@@ -241,7 +241,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function fadeInOut() {
       // Set the next heading with HTML content
-      dynamicHeading.innerHTML = `<div class="animate__animated animate__fadeIn">
+      dynamicHeading.innerHTML = `<div class=" impact-points animate__animated animate__fadeIn '2s' ">
       ${headings[index]}
       </div>`;
 
@@ -262,7 +262,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
           // Repeat the process
           fadeInOut();
-      }, 2000); // Adjust the time between headings
+      }, 3000); // Adjust the time between headings
   }
 
   // Start the animation
