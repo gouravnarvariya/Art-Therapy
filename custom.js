@@ -49,7 +49,7 @@ document.addEventListener('scroll', function() {
         animationApplied = false;
     }
     console.log()
-    const leftHeight = viewportHeight+divHeight-40;
+    const leftHeight = viewportHeight+divHeight;
     console.log(leftHeight,"left height")
     function handleLeftRightAnimation() {
         if (scrollHeight >= leftHeight ) {
