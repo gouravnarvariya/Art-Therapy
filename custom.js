@@ -15,21 +15,26 @@ document.addEventListener('scroll', function() {
     var scrollHeight = window.scrollY;
     var leftElement = document.querySelector('.left');
     var rightElement = document.querySelector('.right');
+       // Get the div element by its ID
+       var myDiv = document.querySelector('.program-section');
 
+       // Get the height of the div
+       var divHeight = myDiv.clientHeight;
+
+       // Log the height to the console or use it as needed
+       console.log('Div Height:', divHeight);
+  console.log(scrollHeight)
     if (scrollHeight >= viewportHeight)  {
         if (!animationApplied) {
             showNavbar.classList.remove("animate__fadeOutUp");
             showNavbar.classList.add("nav-flex-1");
             showNavbar.classList.add("animate__fadeInDown");
-            // console.log(programSection)
-            programSection.classList.add("margin-top-100");
+            // programSection.classList.add("margin-top-100");
             showNavbar.addEventListener('animationend', function handleAnimationEnd() {
-                handleLeftRightAnimation();
+                // handleLeftRightAnimation();
                 console.log("first");
-
                 // Reset the animationApplied flag
                 animationApplied = false;
-
                 // Remove the event listener to avoid multiple calls
                 showNavbar.removeEventListener('animationend', handleAnimationEnd);
             });
@@ -39,15 +44,15 @@ document.addEventListener('scroll', function() {
     } else {
         showNavbar.classList.add("animate__fadeOutUp");
         showNavbar.classList.remove("animate__fadeInDown");
-        programSection.classList.remove("margin-top-100");
-
-
+        // programSection.classList.remove("margin-top-100");
         // Reset the animationApplied flag when user scrolls back to the top
         animationApplied = false;
     }
-
+    console.log()
+    const leftHeight = viewportHeight+divHeight-40;
+    console.log(leftHeight,"left height")
     function handleLeftRightAnimation() {
-        if (scrollHeight >= viewportHeight ) {
+        if (scrollHeight >= leftHeight ) {
             leftElement.classList.add('animate__fadeInLeft');
             rightElement.classList.add('animate__fadeInRight');
             console.log("if");
@@ -57,9 +62,10 @@ document.addEventListener('scroll', function() {
             console.log("else");
         }
     }
+    handleLeftRightAnimation();
 });
 
-
+9826488402
 // Toggle   Toggle  Toggle  Toggle  Toggle  Toggle  Toggle  Toggle 
 
 const toggleMenu = document.querySelector(".toggle-menu")
