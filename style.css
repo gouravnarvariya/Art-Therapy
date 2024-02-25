@@ -1062,9 +1062,9 @@ width: 10%;
   font-weight: 500;
 }
 
-/* .pulse-element {
+.pulse-element {
   animation: pulseAnimation 2s infinite;
-} */
+}
 
 @keyframes pulseAnimation {
   0% {

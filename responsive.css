@@ -387,7 +387,7 @@ p.paragraph-quote {
     font-family: 'Allura';
     text-align: center;
     margin-bottom: 20px;
-    font-weight: 500;
+    font-weight: bolder;
     color: var(--text-color);
 }
 .red-text {
