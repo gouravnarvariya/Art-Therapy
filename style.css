@@ -1078,9 +1078,9 @@ width: 10%;
   }
 }
 
-.margin-top-100 {
+/* .margin-top-100 {
   margin-top: 110px;
-}
+} */
 
 
 
@@ -1093,5 +1093,5 @@ width: 10%;
   margin-bottom: 20px;
   font-weight: 500;
   line-height: 2rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
