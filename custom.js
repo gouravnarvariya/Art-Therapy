@@ -2,17 +2,17 @@
 // animation of navbar and brains animation of brains animation of navbar and brains 
 
 const showNavbar = document.querySelector(".nav-section");
+const programSection = document.querySelector(".program-section")
 let animationApplied = false;
 
 // Get viewport height (screen height)
 var viewportHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
-console.log(viewportHeight);
+console.log(programSection);
 
 
 document.addEventListener('scroll', function() {
     var scrollHeight = window.scrollY;
-    var screenSize = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     var leftElement = document.querySelector('.left');
     var rightElement = document.querySelector('.right');
 
@@ -21,7 +21,8 @@ document.addEventListener('scroll', function() {
             showNavbar.classList.remove("animate__fadeOutUp");
             showNavbar.classList.add("nav-flex-1");
             showNavbar.classList.add("animate__fadeInDown");
-
+            // console.log(programSection)
+            programSection.classList.add("margin-top-100");
             showNavbar.addEventListener('animationend', function handleAnimationEnd() {
                 handleLeftRightAnimation();
                 console.log("first");
@@ -38,6 +39,8 @@ document.addEventListener('scroll', function() {
     } else {
         showNavbar.classList.add("animate__fadeOutUp");
         showNavbar.classList.remove("animate__fadeInDown");
+        programSection.classList.remove("margin-top-100");
+
 
         // Reset the animationApplied flag when user scrolls back to the top
         animationApplied = false;
@@ -224,7 +227,7 @@ function submitForm() {
 
 
 
-
+// animation for tag line 
 
 
 
@@ -241,14 +244,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function fadeInOut() {
       // Set the next heading with HTML content
-      dynamicHeading.innerHTML = `<div class=" impact-points animate__animated animate__fadeIn '2s' ">
+      dynamicHeading.innerHTML =  `
+      <div class="animate__animated animate__delay-2s animate__fadeOutUp  ">
+      <div class=" impact-points animate__animated animate__fadeIn ">
       ${headings[index]}
+      </div>
       </div>`;
-
-      // dynamicHeading.classList.remove("animate__bounce")
-      // dynamicHeading.classList.add("animate__bounce")  
-
-
+ 
       // Fade in the heading
       dynamicHeading.style.opacity = 1;
 
@@ -258,11 +260,13 @@ document.addEventListener('DOMContentLoaded', function () {
           dynamicHeading.style.opacity = 0;
 
           // Move to the next heading
+          
+          // dynamicHeading.getElementsByTagName("div")[0].classList.add("animate__fadeOutUp")
           index = (index + 1) % headings.length;
 
           // Repeat the process
           fadeInOut();
-      }, 3000); // Adjust the time between headings
+      }, 4000); // Adjust the time between headings
   }
 
   // Start the animation

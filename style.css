@@ -1062,8 +1062,25 @@ width: 10%;
   font-weight: 500;
 }
 
+/* .pulse-element {
+  animation: pulseAnimation 2s infinite;
+} */
 
+@keyframes pulseAnimation {
+  0% {
+      transform: scale(.9);
+  }
+  50% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(.9);
+  }
+}
 
+.margin-top-100 {
+  margin-top: 110px;
+}
 
 
 
