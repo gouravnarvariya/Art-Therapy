@@ -234,8 +234,8 @@ function submitForm() {
 document.addEventListener('DOMContentLoaded', function () {
   const headings = [
       "Tap into your <span class='text-span-20'>potential</span>",
-      "Unlock your <span class='text-span-20'>emotional</span> power",
-      "Master your <span class='text-span-20'>gift</span>",
+      "Unlock your <span class='text-span-20'>emotional</span> strength",
+      "Master your <span class='text-span-20'>gifts</span>",
       "Bring <span class='text-span-20'>excellence</span> to your work"
   ];
 
