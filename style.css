@@ -235,7 +235,7 @@ body {
 .therapy-flex {
   display: flex;
   gap: 15px;
-  width: 70%;
+  width: 100%;
   flex-wrap: wrap;
 }
 
@@ -247,7 +247,7 @@ body {
 
 .hero-bullet {
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .hero-text-div button {
@@ -513,11 +513,13 @@ font-size: 2.1rem;
 
 .div-help-img img {
 border-radius: 10%;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
 }
 
 .div-methods-img img {
 margin-top: 100px;
 border-radius: 10%;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
 }
 
 .heading.services.two {
@@ -1011,7 +1013,7 @@ animation: slide 10s linear infinite;
 }
 
 .therapy-inner-div {
-margin-right: 20px; /* Adjust the spacing between slides */
+/* margin-right: 20px; Adjust the spacing between slides */
 transition: opacity 1s ease-in-out;
 }
 
@@ -1024,40 +1026,6 @@ width: 10%;
 
 
 
-.containerrr p {
-font-size: 3rem;
-padding: 0.5rem;
-font-weight: bold;
-letter-spacing: 0.1rem;
-text-align: center;
-overflow: hidden;
-}
-.containerrr p span.typed-text {
-font-weight: normal;
-font-size: 3rem;
-font-weight: 100;
-line-height: 5rem;
-font-family: "Allura";
-}
-.containerrr p span.cursor {
-display: inline-block;
-background-color: #ccc;
-margin-left: 0.1rem;
-height: 3rem;
-vertical-align: middle; /* Added to center the cursor vertically */
-width: 3px;
-animation: blink 1s infinite;
-}
-.containerrr p span.cursor.typing {
-animation: none;
-}
-@keyframes blink {
-0%  { background-color: #ccc; }
-49% { background-color: #ccc; }
-50% { background-color: transparent; }
-99% { background-color: transparent; }
-100%  { background-color: #ccc; }
-}
 
 
 
@@ -1079,84 +1047,20 @@ animation: none;
 
 
 
-* {
-  box-sizing: border-box;
-  font-family: sans-serif;
+
+
+
+
+
+
+
+
+.potential-div h1 {
+  opacity: 0;
+  /* transition: opacity 1s ease-in-out; */
+  font-size: 2.4rem;
+  font-family: 'Allura';
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 500;
 }
-
-/* html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-section {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-/* .panel p {
-  font-size: 6vw;
-}
-
-.red {
-  background: red;
-}
-
-.blue {
-  background: blue;
-}
-
-.green {
-  background: green;
-}
-
-.orange {
-  background: orange;
-} */
-
-.trigger {
-  height:100%;
-  width:100%;
-}
-
-.red-text {
-  color: red!important;
-}
-
-
-
-.typewriter h1 {
-  display: none; /* Initially hide all h1 elements */
-  overflow: hidden;
-  border-right: .15em solid orange;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .15em;
-}
-
-@keyframes typing {
-  0%, 50%, 100% { width: 0 }
-  25%, 75% { width: 100% }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}
-
-.typewriter h1:nth-child(1) { animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite; }
-.typewriter h1:nth-child(2) { animation: typing 3.5s steps(40, end) 4s infinite, blink-caret .75s step-end infinite; } /* Adjust delay as needed */
-.typewriter h1:nth-child(3) { animation: typing 3.5s steps(40, end) 8s infinite, blink-caret .75s step-end infinite; } /* Adjust delay as needed */
-/* Add more nth-child rules for additional h1 elements */
-
-
-
-
-
-

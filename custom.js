@@ -70,21 +70,6 @@ toggleMenu.addEventListener('click',()=>{
 
 
 
-const lines = document.querySelectorAll('.potential-div p span');
-
-// Set initial visibility and opacity for each line
-lines.forEach((line, index) => {
-    gsap.set(line, { y: '100%', autoAlpha: 0 });
-});
-
-// Use GSAP to animate each line
-gsap.timeline({
-    scrollTrigger: {
-        trigger: '.potential-div',
-        start: 'top center',
-    }
-})
-    .staggerTo(lines, 1, { y: '0%', autoAlpha: 1, ease: 'power2.out' }, 0.3);
 
 
 
@@ -161,79 +146,125 @@ sections.forEach((eachPanel, i) => {
 
 
 
-const typedTextSpan = document.querySelector(".typed-text");
-const cursorSpan = document.querySelector(".cursor");
+// const typedTextSpan = document.querySelector(".typed-text");
+// const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Tap into your potential", "Unlock your emotional", "Master your gift", "Bring excellence to your work"];
-const typingDelay = 200;
-const erasingDelay = 100;
-const newTextDelay = 2000; // Delay between current and next text
-let textArrayIndex = 0;
-let charIndex = 0;
+// const textArray = ["Tap into your potential", "Unlock your emotional", "Master your gift", "Bring excellence to your work"];
+// const typingDelay = 200;
+// const erasingDelay = 100;
+// const newTextDelay = 2000; // Delay between current and next text
+// let textArrayIndex = 0;
+// let charIndex = 0;
 
-function type() {
-  if (charIndex < textArray[textArrayIndex].length) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-    charIndex++;
-    setTimeout(type, typingDelay);
-  } 
-  else {
-    cursorSpan.classList.remove("typing");
-  	setTimeout(erase, newTextDelay);
+// function type() {
+//   if (charIndex < textArray[textArrayIndex].length) {
+//     if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+//     typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+//     charIndex++;
+//     setTimeout(type, typingDelay);
+//   } 
+//   else {
+//     cursorSpan.classList.remove("typing");
+//   	setTimeout(erase, newTextDelay);
+//   }
+// }
+
+// function erase() {
+// 	if (charIndex > 0) {
+//     if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+//     typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+//     charIndex--;
+//     setTimeout(erase, erasingDelay);
+//   } 
+//   else {
+//     cursorSpan.classList.remove("typing");
+//     textArrayIndex++;
+//     if(textArrayIndex>=textArray.length) textArrayIndex=0;
+//     setTimeout(type, typingDelay + 1100);
+//   }
+// }
+
+// document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+//   if(textArray.length) setTimeout(type, newTextDelay + 250);
+// });
+
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const slider = document.querySelector('.slider');
+//     const slides = document.querySelectorAll('.slider .therapy-inner-div');
+
+//     let index = 0;
+
+//     function showNextSlide() {
+//         slides.forEach((slide) => {
+//             slide.style.display = 'none';
+//         });
+
+//         index = (index + 1) % slides.length;
+//         slides[index].style.display = 'block';
+//     }
+
+//     // Initial setup
+//     slides.forEach((slide, i) => {
+//         slide.style.display = i === 0 ? 'block' : 'none';
+//     });
+
+//     setInterval(showNextSlide, 2000); // Change slide every 2000 milliseconds (2 seconds)
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const headings = [
+      "Tap into your <span class='text-span-20'>potential</span>",
+      "Unlock your <span class='text-span-20'>emotional</span> power",
+      "Master your <span class='text-span-20'>gift</span>",
+      "Bring <span class='text-span-20'>excellence</span> to your work"
+  ];
+
+  let index = 0;
+  const dynamicHeading = document.getElementById('dynamicHeading');
+
+  function fadeInOut() {
+      // Set the next heading with HTML content
+      dynamicHeading.innerHTML = `<div class="animate__animated animate__fadeIn">
+      ${headings[index]}
+      </div>`;
+
+      // dynamicHeading.classList.remove("animate__bounce")
+      // dynamicHeading.classList.add("animate__bounce")  
+
+
+      // Fade in the heading
+      dynamicHeading.style.opacity = 1;
+
+      // Wait for a duration (adjust as needed)
+      setTimeout(function () {
+          // Fade out the heading
+          dynamicHeading.style.opacity = 0;
+
+          // Move to the next heading
+          index = (index + 1) % headings.length;
+
+          // Repeat the process
+          fadeInOut();
+      }, 2000); // Adjust the time between headings
   }
-}
 
-function erase() {
-	if (charIndex > 0) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
-    charIndex--;
-    setTimeout(erase, erasingDelay);
-  } 
-  else {
-    cursorSpan.classList.remove("typing");
-    textArrayIndex++;
-    if(textArrayIndex>=textArray.length) textArrayIndex=0;
-    setTimeout(type, typingDelay + 1100);
-  }
-}
-
-document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
-  if(textArray.length) setTimeout(type, newTextDelay + 250);
+  // Start the animation
+  fadeInOut();
 });
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const slider = document.querySelector('.slider');
-    const slides = document.querySelectorAll('.slider .therapy-inner-div');
-
-    let index = 0;
-
-    function showNextSlide() {
-        slides.forEach((slide) => {
-            slide.style.display = 'none';
-        });
-
-        index = (index + 1) % slides.length;
-        slides[index].style.display = 'block';
-    }
-
-    // Initial setup
-    slides.forEach((slide, i) => {
-        slide.style.display = i === 0 ? 'block' : 'none';
-    });
-
-    setInterval(showNextSlide, 2000); // Change slide every 2000 milliseconds (2 seconds)
-});
-
-
-
-
-
-
-
-
-
-
