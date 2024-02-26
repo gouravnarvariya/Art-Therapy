@@ -242,7 +242,8 @@ document.addEventListener('DOMContentLoaded', function () {
       "Tap into your <span class='text-span-20'>potential</span>",
       "Unlock your <span class='text-span-20'>emotional</span> strength",
       "Master your <span class='text-span-20'>gifts</span>",
-      "Bring <span class='text-span-20'>excellence</span> to your work"
+      "Bring  <span class='text-span-20'> excellence </span> to your work",
+      "We help you Excel & Become <span class='text-span-20'>limitless</span> "
   ];
 
   let index = 0;
@@ -278,3 +279,9 @@ document.addEventListener('DOMContentLoaded', function () {
   // Start the animation
   fadeInOut();
 });
+
+
+
+
+
+
