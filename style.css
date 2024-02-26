@@ -1112,3 +1112,12 @@ width: 10%;
 
 }
 
+.quote-text-div p span {
+  font-size: 1.3rem;
+    font-family: 'Cagliostro';
+    text-align: center;
+    line-height: 1.7rem;
+    color: var(--text-color);
+
+}
+

@@ -132,8 +132,8 @@
 }
 
 .hero-bullet {
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 300;
+    font-size: .9rem;
 }
 .therapy-inner-div img {
 
@@ -303,7 +303,7 @@
 }
 
 .quote-text-div {
-    margin: 10px 0px;
+    margin: 15px 0px;
     text-align: left;
 }
 .div-methods-img img {
@@ -320,6 +320,7 @@
     font-size: .9rem;
     line-height: 1.4rem;
     font-family: "papyrus";
+    color: var(--dark);
 }
 
 h1.h1-hero {
@@ -403,12 +404,12 @@ p.paragraph-quote {
   .potential-div h1 {
     opacity: 1;
     /* transition: opacity 1s ease-in-out; */
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: 'Cagliostro';
     text-align: center;
     margin-bottom: 20px;
     font-weight: 500;
-    line-height: 2rem;
+    line-height: 1.3rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  }
+}
 }
