@@ -135,9 +135,7 @@
     font-weight: 300;
     font-size: .9rem;
 }
-.therapy-inner-div img {
 
-}
 .therapy-flex {
     width: 100%;
     display: flex;
@@ -388,7 +386,7 @@ p.paragraph-quote {
 
 }
 .text-span-20 {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-family: 'Allura';
     text-align: center;
     margin-bottom: 20px;
@@ -405,7 +403,7 @@ p.paragraph-quote {
   .potential-div h1 {
     opacity: 1;
     /* transition: opacity 1s ease-in-out; */
-    font-size: 1.9rem;
+    font-size: 1.4rem;
     font-family: 'Cagliostro';
     text-align: center;
     margin-bottom: 20px;
@@ -432,4 +430,108 @@ p.paragraph-quote {
       /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
   
   }
+  .member-data-div h1 {
+    color: var(--sage);
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-family: "Allura";
+    color: var(--text-color);
+}
+.member-data-div p {
+    color: var(--dim-grey);
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-size: .9rem;
+    line-height: 26px;
+}
+.text-span-12 {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 30px;
+}
+.color-sec {
+    color: var(--text-color);
+}
+.text-span-11  span{ 
+    margin-left: 5px;}
+    .text-span-13 span {
+        margin-left: 5px;
+    }
+    .member-image-div  img {
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+    .text-span-10 {
+        font-size: 5rem;
+        color: var(--text-color);
+    }
+    .h1-team {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    .team-member-wrapper img {
+        border-radius: 50%;
+    }
+
+.team-member-text {
+    gap: 0px;
+}
+.testimonial-heading {
+    text-align: center;
+}
+.testimonial-heading h1 {
+    font-size: 2rem;
+}
+.testimonial-heading p {
+font-size: 1.3rem;
+color: var(--dim-grey);
+}
+.text-span-testimonial {
+    color: var(--text-color);
+    font-family: 'Allura';
+    font-size: 3.3rem;
+}
+.testimonial-carousel {
+    padding: 10px 0px;
+}
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    display: none;
+}
+.owl-theme .owl-dots, .owl-theme  {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    -webkit-tap-highlight-color: transparent;
+}
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    width: 5%;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span    {
+    background-color: var(--text-color);
+}
+.item {
+padding: 20px 10px;
+}
+
+.item h2 {
+    text-align: left;
+    font-size: 4rem;
+    font-family: cursive;
+    line-height: 1.3rem;
+    color: var(--text-color);
+}
+.item p {
+    text-align: left;
+    padding-left: 30px;
+}
+.item h1 {
+    padding-top: 10px;
+    text-align: left;
+    padding-left: 30px;
+}
 }

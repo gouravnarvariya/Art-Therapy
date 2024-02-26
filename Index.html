@@ -20,13 +20,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cagliostro&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
 </head>
 <body>
     <header id="home-click" class=" panel banner-section">
         <div class="banner-image">
-
             <nav class="nav-section animate__animated animate__fadeInDown '4s'">
                 <div class="container">
                     <img loading="lazy" src="./Images/The ART Trajectory.png" alt="logo">
@@ -38,9 +40,7 @@
                     <a class="client-portal">Client Portal</a>
                     <a href="#contact" class="book-appoinment" >Book an Appointment</a>
                 </nav>
-                </div>
-                
-                
+                </div>          
                 <div class="navbar-btn-flex">
                 <div class="toggle-menu">
                     <i class="fa-solid fa-bars"></i>
@@ -71,13 +71,9 @@
                                     <button class="scroll-btn" onclick="scrollToSection('section1')">Connect Now</button>
                                 </div>
                                 <div class="potential-div animate__animated  " >
-                                    <p>Tap into your <span class="text-span-20"> potential</span> ,
+                                    <p>We help you  <span class="text-span-20"> Excel</span> ,
                                         <br>
-                                        Unlock your <span class="text-span-20"> emotional</span>  power,
-                                        <br>
-                                        Master ur <span class="text-span-20"> gift</span> ,
-                                        <br>
-                                        Bring <span class="text-span-20"> excellence</span> to your work</p>
+                                        &  become  <span class="text-span-20"> Limitless</span>  power,</p>
                                 </div>
 
                             
@@ -291,6 +287,57 @@
             
      </div>
     </section>
+    <section class="testimonial-section">
+
+            <div class="container">
+                <div class="testimonial-heading">
+                    <h1>Our Client <span class="text-span-testimonial">Says</span></h1>
+                    <p>We are loving your testimonial and 
+                        <br>
+                        We value your reviews 
+                    </p>
+                </div>
+        <div class="owl-carousel owl-theme testimonial-carousel">
+            <div class="item">
+                <h2>"</h2>
+                <p>Totally love Swati mam as my coach, she is so helpful & lively. She has resolved all my concerns and have made me clear my IIT entrance exams
+                </p> <h1>Abhishek Sharma, IIT JEE aspirant (age- 18 yrs)</h1> 
+                
+            </div>
+            <div class="item">
+                <h2>"</h2>
+                <p>Her hard hitting questions made me delve deeper into myself & find out some amazing answers. I am much more driven now & feel successful at my work & in life
+                </p><h1>Prashant Sethi, Entrepreneur  (age- 35 yrs)</h1>
+            </div>
+            <div class="item">
+                <h2>"</h2>
+                <p>Swati Mam is the most favorite & popular amongst all our students specially for 9th, 10th & Junior college. We value her contribution & passion for children
+                </p> <h1>Principal (age- 52 yrs)</h1>  
+            </div>
+            <div class="item">
+                <h2>"</h2>
+                <p>A big thanks to you swati for guiding my child in channelizing his efforts. You are doing great service
+                </p>  <h1>Shakshi Jhavar, Parents (age-35 yrs) </h1>  
+            </div>
+            <div class="item">
+                <h2>"</h2>
+                <p>Swati, a big thanks to you for giving me a better perspective to looking at myself. You are way to good with your work. And I just wish you reach more & more lives like mine to spread your magical wisdom. Can’t thank you enough.
+                </p> <h1>Suveer Bhambhani, Actor & Acting Teacher (age- 28 years) </h1>
+            </div>
+            <div class="item">
+                <h2>"</h2>
+                <p>Swati is not only a brilliant coach but also a multi-layered person with expertise in various fields. I was surprised with her maturity & childlike curiosity. My sessions with her are so outstanding & peaceful that I will continue for life-time.
+                    </p>     <h1>>Manish Mathur, Entrepreneur & a Father (age- 45 yrs) </h1>
+            </div>
+            <div class="item">
+                <h2>"</h2>
+                <p>I never knew about the drastic impact of coaching on my health & my work until I had therapeutic sessions from my adorable coach Swati. Me & my Daughter both feel healed & are up to live our life to the fullest. 
+                </p> <h1> Kanupriya, Working Mother & Independent professional (age- 42 yrs) <h1>
+            </div>
+           
+        </div>
+    </div>
+    </section>
     <section id="section1"  class="contact-section section">
         <div class="container">
             <div class="contact-div">
@@ -364,12 +411,14 @@
                 </div>
          </footer>
     </section>
-   
-    </body>
     <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/gsap@3.9.0/dist/ScrollToPlugin.min.js"></script>
     <!-- Include GSAP library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="custom.js"></script>
     <script>
         function scrollToSection(sectionId) {

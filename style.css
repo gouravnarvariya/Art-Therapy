@@ -183,9 +183,7 @@ body {
   flex: 0 0 49%;
 }
 
-.hero-img-wrapper img {
-  /* border-radius: 50%; */
-}
+
 
 .hero-text-div h1 {
   margin-top: 80px;
@@ -868,10 +866,10 @@ color: var(--text-color);
 
 .text-span-13 {
   color: var(--dim-grey);
-  background-image: url("https://assets-global.website-files.com/62ef010408977750395b517c/62f361c50d180f689e1158c3_team_ic_location.svg");
+  /* background-image: url("https://assets-global.website-files.com/62ef010408977750395b517c/62f361c50d180f689e1158c3_team_ic_location.svg");
   background-position: 20% 50%;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: auto; */
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
@@ -935,10 +933,7 @@ color: var(--text-color);
   padding: 10px;
 }
 
-.accordion-section.open .accordion-header {
-   /* Adjust background color when open */
 
-}
 
 .caret {
   transition: transform 0.3s ease;
@@ -992,7 +987,7 @@ color: var(--text-color);
 
 .member-1-text-add {
 align-items: flex-start;
-  
+  gap: 3px;
 }
 
 .member-data-div p {
@@ -1122,4 +1117,7 @@ width: 10%;
     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
 
 }
+
+
+
 

@@ -8,7 +8,7 @@ let animationApplied = false;
 // Get viewport height (screen height)
 var viewportHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
-console.log(programSection);
+// console.log(programSection);
 
 
 document.addEventListener('scroll', function() {
@@ -23,8 +23,8 @@ document.addEventListener('scroll', function() {
        var divHeight = myDiv.clientHeight;
 
        // Log the height to the console or use it as needed
-       console.log('Div Height:', divHeight);
-  console.log(scrollHeight)
+    //    console.log('Div Height:', divHeight);
+//   console.log(scrollHeight)
     if (scrollHeight >= viewportHeight)  {
         if (!animationApplied) {
             showNavbar.classList.remove("animate__fadeOutUp");
@@ -33,7 +33,7 @@ document.addEventListener('scroll', function() {
             // programSection.classList.add("margin-top-100");
             showNavbar.addEventListener('animationend', function handleAnimationEnd() {
                 // handleLeftRightAnimation();
-                console.log("first");
+                // console.log("first");
                 // Reset the animationApplied flag
                 animationApplied = false;
                 // Remove the event listener to avoid multiple calls
@@ -49,22 +49,22 @@ document.addEventListener('scroll', function() {
         // Reset the animationApplied flag when user scrolls back to the top
         animationApplied = false;
     }
-    console.log()
+    // console.log()
     const leftHeight = viewportHeight+divHeight;
-    console.log(leftHeight,"left height")
+    // console.log(leftHeight,"left height")
     function handleLeftRightAnimation() {
         if (scrollHeight >= leftHeight ) {
             leftElement.classList.add('animate__fadeInLeft');
             rightElement.classList.add('animate__fadeInRight');
             centreElement.classList.add('animate__pulse');
 
-            console.log("if");
+            // console.log("if");
         } else {
             leftElement.classList.remove('animate__fadeInLeft');
             rightElement.classList.remove('animate__fadeInRight');
             centreElement.classList.remove('animate__pulse');
 
-            console.log("else");
+            // console.log("else");
         }
     }
     handleLeftRightAnimation();
@@ -242,51 +242,67 @@ function submitForm() {
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-  const headings = [
-      "Tap into your <span class='text-span-20'>potential</span>",
-      "Unlock your <span class='text-span-20'>emotional</span> strength",
-      "Master your <span class='text-span-20'>gifts</span>",
-      "Bring  <span class='text-span-20'> excellence </span> to your work",
-      "We help you Excel & Become <span class='text-span-20'>limitless</span> "
-  ];
+// document.addEventListener('DOMContentLoaded', function () {
+//   const headings = [
+//       "Tap into your <span class='text-span-20'>potential</span>",
+//       "Unlock your <span class='text-span-20'>emotional</span> strength",
+//       "Master your <span class='text-span-20'>gifts</span>",
+//       "Bring  <span class='text-span-20'> excellence </span> to your work",
+//       "We help you Excel & Become <span class='text-span-20'>limitless</span> "
+//   ];
 
-  let index = 0;
-  const dynamicHeading = document.getElementById('dynamicHeading');
+//   let index = 0;
+//   const dynamicHeading = document.getElementById('dynamicHeading');
 
-  function fadeInOut() {
-      // Set the next heading with HTML content
-      dynamicHeading.innerHTML =  `
-      <div class="animate__animated animate__delay-2s animate__fadeOutUp  ">
-      <div class=" impact-points animate__animated animate__fadeIn ">
-      ${headings[index]}
-      </div>
-      </div>`;
+//   function fadeInOut() {
+//       // Set the next heading with HTML content
+//       dynamicHeading.innerHTML =  `
+//       <div class="animate__animated animate__delay-2s animate__fadeOutUp  ">
+//       <div class=" impact-points animate__animated animate__fadeIn ">
+//       ${headings[index]}
+//       </div>
+//       </div>`;
  
-      // Fade in the heading
-      dynamicHeading.style.opacity = 1;
+//       // Fade in the heading
+//       dynamicHeading.style.opacity = 1;
 
-      // Wait for a duration (adjust as needed)
-      setTimeout(function () {
-          // Fade out the heading
-          dynamicHeading.style.opacity = 0;
+//       // Wait for a duration (adjust as needed)
+//       setTimeout(function () {
+//           // Fade out the heading
+//           dynamicHeading.style.opacity = 0;
 
-          // Move to the next heading
+//           // Move to the next heading
           
-          // dynamicHeading.getElementsByTagName("div")[0].classList.add("animate__fadeOutUp")
-          index = (index + 1) % headings.length;
+//           // dynamicHeading.getElementsByTagName("div")[0].classList.add("animate__fadeOutUp")
+//           index = (index + 1) % headings.length;
 
-          // Repeat the process
-          fadeInOut();
-      }, 4000); // Adjust the time between headings
-  }
+//           // Repeat the process
+//           fadeInOut();
+//       }, 4000); // Adjust the time between headings
+//   }
 
-  // Start the animation
-  fadeInOut();
-});
-
-
+//   // Start the animation
+//   fadeInOut();
+// });
 
 
 
+// testimonial carousel testimonial carousel testimonial carousel
 
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
