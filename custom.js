@@ -15,6 +15,7 @@ document.addEventListener('scroll', function() {
     var scrollHeight = window.scrollY;
     var leftElement = document.querySelector('.left');
     var rightElement = document.querySelector('.right');
+    var centreElement = document.querySelector('.quote-center-effect')
        // Get the div element by its ID
        var myDiv = document.querySelector('.program-section');
 
@@ -55,10 +56,14 @@ document.addEventListener('scroll', function() {
         if (scrollHeight >= leftHeight ) {
             leftElement.classList.add('animate__fadeInLeft');
             rightElement.classList.add('animate__fadeInRight');
+            centreElement.classList.add('animate__pulse');
+
             console.log("if");
         } else {
             leftElement.classList.remove('animate__fadeInLeft');
             rightElement.classList.remove('animate__fadeInRight');
+            centreElement.classList.remove('animate__pulse');
+
             console.log("else");
         }
     }
