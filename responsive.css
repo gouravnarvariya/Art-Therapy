@@ -388,12 +388,13 @@ p.paragraph-quote {
 
 }
 .text-span-20 {
-    font-size: 1.6rem;
-    font-family: 'Cagliostro';
+    font-size: 2rem;
+    font-family: 'Allura';
     text-align: center;
     margin-bottom: 20px;
     font-weight: bolder;
     color: var(--text-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .red-text {
     color: red;
@@ -410,6 +411,26 @@ p.paragraph-quote {
     margin-bottom: 20px;
     font-weight: 500;
     line-height: 1.3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    
 }
+.quote-text-div p {
+    font-size: 1.3rem;
+    font-family: 'Cagliostro';
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 1.7rem;
+  
+  }
+  
+  .quote-text-div p span {
+    font-size: 2rem;
+      font-family: 'Allura';
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: bolder;
+      color: var(--text-color);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  
+  }
 }
