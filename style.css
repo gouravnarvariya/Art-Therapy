@@ -1,8 +1,7 @@
 * {
   box-sizing: border-box;
   font-size: 1rem;
-  /* font-family: "Barlow" ,"Allura", "Palatino Linotype" ; */
-  
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
   }
 
   @font-face {
@@ -15,7 +14,7 @@ body {
   margin: 0px;
   background-color: #ffffff;
   font-weight: normal;
-  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  /* font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; */
   
 }
 h1,
@@ -489,7 +488,13 @@ font-size: 2.1rem;
   font-weight: 500;
 }
 
-.div-block-4, .div-block-5 {
+.div-block-3 {
+flex: 0 0 25%;
+}
+
+.div-block-4 {
+flex: 0 0 25%;
+
   position: relative;
   top: 50px;
 }
@@ -1099,5 +1104,11 @@ width: 10%;
 
 
 
+.quote-text-div p {
+  font-size: 1.3rem;
+    font-family: 'Cagliostro';
+    text-align: center;
+    line-height: 1.7rem;
 
+}
 

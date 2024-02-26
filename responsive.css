@@ -124,7 +124,7 @@
     gap: 10px;
 } */
 .therapy-inner-div {
-    flex: 0 0 30%;
+    flex: 0 0 48%;
     display: flex;
     gap: 10px;
     margin-right: 0px;
@@ -144,6 +144,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     height: 90%;
+    gap: 0px;
 }
 
     .hero-text-div button {
@@ -260,7 +261,7 @@
     }
     .therapy-flex-1 {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: baseline;
     }
 
@@ -303,6 +304,7 @@
 
 .quote-text-div {
     margin: 10px 0px;
+    text-align: left;
 }
 .div-methods-img img {
     margin-top: 30px;
@@ -315,8 +317,9 @@
     margin-bottom: 20px;
 }
 .quote-text-div h1 span {
-    font-size: 1.5rem;
-    line-height: 2.2rem;
+    font-size: .9rem;
+    line-height: 1.4rem;
+    font-family: "papyrus";
 }
 
 h1.h1-hero {
@@ -371,7 +374,7 @@ h1.h1-hero {
     width: 100%;
 }
 .quote-image-div {
-    height: 36%;
+    height: 39%;
 }
 .quote-container {
     height: 18%;
@@ -384,8 +387,8 @@ p.paragraph-quote {
 
 }
 .text-span-20 {
-    font-size: 2.4rem;
-    font-family: 'Allura';
+    font-size: 2rem;
+    font-family: 'Cagliostro';
     text-align: center;
     margin-bottom: 20px;
     font-weight: bolder;
@@ -396,5 +399,16 @@ p.paragraph-quote {
   }
   body::-webkit-scrollbar {
     display: none;
+  }
+  .potential-div h1 {
+    opacity: 1;
+    /* transition: opacity 1s ease-in-out; */
+    font-size: 2rem;
+    font-family: 'Cagliostro';
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
 }
