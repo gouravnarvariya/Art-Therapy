@@ -388,11 +388,11 @@ p.paragraph-quote {
 
 }
 .text-span-20 {
-    font-size: 2rem;
+    font-size: 2.8rem;
     font-family: 'Allura';
     text-align: center;
     margin-bottom: 20px;
-    font-weight: bolder;
+    font-weight: 500;
     color: var(--text-color);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -405,32 +405,31 @@ p.paragraph-quote {
   .potential-div h1 {
     opacity: 1;
     /* transition: opacity 1s ease-in-out; */
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-family: 'Cagliostro';
     text-align: center;
     margin-bottom: 20px;
-    font-weight: 500;
-    line-height: 1.3rem;
-    
+    font-weight: 300;
+    line-height: 1.6rem;
 }
 .quote-text-div p {
     font-size: 1.3rem;
     font-family: 'Cagliostro';
     text-align: center;
     margin-bottom: 20px;
-    font-weight: 500;
-    line-height: 1.7rem;
+    font-weight: 300;
+    line-height: 1.8rem;
   
   }
   
   .quote-text-div p span {
-    font-size: 2rem;
+    font-size: 2.2rem;
       font-family: 'Allura';
       text-align: center;
       margin-bottom: 20px;
-      font-weight: bolder;
+      font-weight: 500;
       color: var(--text-color);
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
   
   }
 }
