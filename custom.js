@@ -71,8 +71,13 @@ document.addEventListener('scroll', function() {
     handleLeftRightAnimation();
 });
 
-9826488402
+
+
+
 // Toggle   Toggle  Toggle  Toggle  Toggle  Toggle  Toggle  Toggle 
+
+
+
 
 const toggleMenu = document.querySelector(".toggle-menu")
 const showBar = document.querySelector(".hiddenNavbar")
@@ -82,12 +87,6 @@ toggleMenu.addEventListener('click',()=>{
     showBar.classList.toggle("showNavbar")
     navbarbtnflex.classList.toggle("changeColor")
 });
-
-
-
-
-
-
 
 
 
@@ -117,178 +116,8 @@ function submitForm() {
 
 
 
-// scroll feature vertical scroll feature vertical scroll feature vertical 
+// Testimonial section Testimonial section Testimonial section Testimonial section 
 
-
-// gsap.registerPlugin(ScrollTrigger);
-// gsap.registerPlugin(ScrollToPlugin);
-
-// let sections = gsap.utils.toArray(".panel");
-
-// function goToSection(i) {
-//   gsap.to(window, {
-//     scrollTo: { y: i * innerHeight, autoKill: false, ease: "Power3.easeInOut" },
-//     duration: 1.5
-//   });
-// }
-
-// ScrollTrigger.defaults({
-//   // markers: true
-// });
-
-
-// sections.forEach((eachPanel, i) => {
-//   // const mainAnim = gsap.timeline({ paused: true });
-
-//   ScrollTrigger.create({
-//     trigger: eachPanel,
-//     onEnter: () => goToSection(i)
-//   });
-
-//   ScrollTrigger.create({
-//     trigger: eachPanel,
-//     start: "bottom bottom",
-//     onEnterBack: () => goToSection(i)
-//   });
-// });
-
-
-
-
-
-
-// type animation type animation type animation type animation type animation 
-
-
-
-// const typedTextSpan = document.querySelector(".typed-text");
-// const cursorSpan = document.querySelector(".cursor");
-
-// const textArray = ["Tap into your potential", "Unlock your emotional", "Master your gift", "Bring excellence to your work"];
-// const typingDelay = 200;
-// const erasingDelay = 100;
-// const newTextDelay = 2000; // Delay between current and next text
-// let textArrayIndex = 0;
-// let charIndex = 0;
-
-// function type() {
-//   if (charIndex < textArray[textArrayIndex].length) {
-//     if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-//     typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-//     charIndex++;
-//     setTimeout(type, typingDelay);
-//   } 
-//   else {
-//     cursorSpan.classList.remove("typing");
-//   	setTimeout(erase, newTextDelay);
-//   }
-// }
-
-// function erase() {
-// 	if (charIndex > 0) {
-//     if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-//     typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
-//     charIndex--;
-//     setTimeout(erase, erasingDelay);
-//   } 
-//   else {
-//     cursorSpan.classList.remove("typing");
-//     textArrayIndex++;
-//     if(textArrayIndex>=textArray.length) textArrayIndex=0;
-//     setTimeout(type, typingDelay + 1100);
-//   }
-// }
-
-// document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
-//   if(textArray.length) setTimeout(type, newTextDelay + 250);
-// });
-
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     const slider = document.querySelector('.slider');
-//     const slides = document.querySelectorAll('.slider .therapy-inner-div');
-
-//     let index = 0;
-
-//     function showNextSlide() {
-//         slides.forEach((slide) => {
-//             slide.style.display = 'none';
-//         });
-
-//         index = (index + 1) % slides.length;
-//         slides[index].style.display = 'block';
-//     }
-
-//     // Initial setup
-//     slides.forEach((slide, i) => {
-//         slide.style.display = i === 0 ? 'block' : 'none';
-//     });
-
-//     setInterval(showNextSlide, 2000); // Change slide every 2000 milliseconds (2 seconds)
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-// animation for tag line 
-
-
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   const headings = [
-//       "Tap into your <span class='text-span-20'>potential</span>",
-//       "Unlock your <span class='text-span-20'>emotional</span> strength",
-//       "Master your <span class='text-span-20'>gifts</span>",
-//       "Bring  <span class='text-span-20'> excellence </span> to your work",
-//       "We help you Excel & Become <span class='text-span-20'>limitless</span> "
-//   ];
-
-//   let index = 0;
-//   const dynamicHeading = document.getElementById('dynamicHeading');
-
-//   function fadeInOut() {
-//       // Set the next heading with HTML content
-//       dynamicHeading.innerHTML =  `
-//       <div class="animate__animated animate__delay-2s animate__fadeOutUp  ">
-//       <div class=" impact-points animate__animated animate__fadeIn ">
-//       ${headings[index]}
-//       </div>
-//       </div>`;
- 
-//       // Fade in the heading
-//       dynamicHeading.style.opacity = 1;
-
-//       // Wait for a duration (adjust as needed)
-//       setTimeout(function () {
-//           // Fade out the heading
-//           dynamicHeading.style.opacity = 0;
-
-//           // Move to the next heading
-          
-//           // dynamicHeading.getElementsByTagName("div")[0].classList.add("animate__fadeOutUp")
-//           index = (index + 1) % headings.length;
-
-//           // Repeat the process
-//           fadeInOut();
-//       }, 4000); // Adjust the time between headings
-//   }
-
-//   // Start the animation
-//   fadeInOut();
-// });
-
-
-
-// testimonial carousel testimonial carousel testimonial carousel
 
 
 $('.owl-carousel').owlCarousel({
