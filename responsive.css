@@ -555,4 +555,15 @@ body::-webkit-scrollbar {
 .quote-section {
     height: 100vh;
 }
+.heading-offer span {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #000;
+}
+.heading-offer {
+    max-width: 100%;
+    font-size: 3.6rem;
+    left: 0px;
+    font-weight: 600;
+}
 }

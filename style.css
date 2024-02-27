@@ -199,8 +199,10 @@ body {
 .hero-text-div h1 span {
   color: var(--text-color);
   font-size: 3rem;
-
+  font-family: 'Cagliostro';
 }
+
+
 
 .paragraph-1 {
   margin-top: 0;
@@ -1233,5 +1235,17 @@ padding: 20px 10px;
   text-align: left;
   padding-left: 30px;
   font-size: 1.2rem;
+
+}
+
+.heading-offer {
+  max-width: 100%;
+  font-size: 4.6rem;
+}
+
+.heading-offer span {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #000;
 
 }

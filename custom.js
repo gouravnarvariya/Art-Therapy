@@ -79,6 +79,7 @@ document.addEventListener('scroll', function() {
 
 
 
+
 const toggleMenu = document.querySelector(".toggle-menu")
 const showBar = document.querySelector(".hiddenNavbar")
 const navbarbtnflex = document.querySelector(".navbar-btn-flex") 
