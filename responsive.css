@@ -471,6 +471,7 @@ p.paragraph-quote {
     }
     .team-member-wrapper img {
         border-radius: 50%;
+        height: auto;
     }
 
 .team-member-text {
