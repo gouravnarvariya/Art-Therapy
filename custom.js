@@ -7,12 +7,13 @@ let animationApplied = false;
 
 // Get viewport height (screen height)
 var viewportHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-
+console.log(viewportHeight,"viewportHeight")
 // console.log(programSection);
 
 
 document.addEventListener('scroll', function() {
     var scrollHeight = window.scrollY;
+    console.log(scrollHeight)
     var leftElement = document.querySelector('.left');
     var rightElement = document.querySelector('.right');
     var centreElement = document.querySelector('.quote-center-effect')
@@ -33,7 +34,7 @@ document.addEventListener('scroll', function() {
             // programSection.classList.add("margin-top-100");
             showNavbar.addEventListener('animationend', function handleAnimationEnd() {
                 // handleLeftRightAnimation();
-                // console.log("first");
+                console.log("first");
                 // Reset the animationApplied flag
                 animationApplied = false;
                 // Remove the event listener to avoid multiple calls
@@ -306,3 +307,26 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var scrollButton = document.getElementById('contactButton');
+    var targetDiv = document.getElementById('section1');
+
+    scrollButton.addEventListener('click', function () {
+        // Scroll to the target div smoothly
+        targetDiv.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var appointmentButton = document.getElementById('appointmentButton');
+
+    appointmentButton.addEventListener('click', function () {
+        // Redirect to contact.html when the button is clicked
+        window.location.href = 'Contact.html';
+    });
+});

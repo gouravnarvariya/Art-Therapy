@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
 </head>
-<body>
+<body >
     <header id="home-click" class=" panel banner-section">
         <div class="banner-image">
             <nav class="nav-section animate__animated animate__fadeInDown '4s'">
@@ -36,9 +36,9 @@
                     <a href="#home-click">Home</a>
                     <a href="./MeetTeam.html">Meet the team</a>
                     <a href="./Faq.html">FAQ</a>
-                    <a>+33423423423423</a>
-                    <a class="client-portal">Client Portal</a>
-                    <a href="#contact" class="book-appoinment" >Book an Appointment</a>
+                    <a>+91-77381 51185</a>
+                    <!-- <a class="client-portal">Client Portal</a> -->
+                    <a href="./Contact.html" >Book an Appointment</a>
                 </nav>
                 </div>          
                 <div class="navbar-btn-flex">
@@ -50,9 +50,8 @@
                       <li><a href="#home-click">Home</a></li>
                       <li > <a href="./MeetTeam.html">Meet the team</a></li>
                       <li ><a href="./Faq.html">FAQ</a></li>
-                      <li > <a>Client Portal</a>  </li>
-                      <li ><a>Book an Appointment</a></li>
-                      <li ><a>Contact</a></li>
+                      <li > <a>+91-77381 51185</a>  </li>
+                      <li ><a  href="./Contact.html">Book an Appointment</a></li>
                     </ul>
                   </div>
                   </div>    
@@ -70,7 +69,7 @@
                                 <div class="connect-div">
                                     <button class="scroll-btn" onclick="scrollToSection('section1')">Connect Now</button>
                                 </div>
-                                <div class="potential-div animate__animated  " >
+                                <div class="potential-div animate__animated animate__animated animate__zoomIn  animate__pulse animate__delay-1s  " >
                                     <p>We help you  <span class="text-span-20"> Excel</span> ,
                                         <br>
                                         &  become  <span class="text-span-20"> Limitless</span>  power,</p>
@@ -113,6 +112,24 @@
                 <!-- <br/> -->
             </h1>
             <!-- <p class="paragraph-quote"></p> -->
+            </div>
+            <div class="thereapy-flex-desktop">
+                <div class="therapy-inner-div">
+                    <img src="https://assets-global.website-files.com/62ef010408977750395b517c/62ef065f1cef285fff21a9fb_ic_bullet_lotus.svg" loading="lazy" alt="Lotus icon"/>
+                    <div class="hero-bullet">Online programs</div>
+                </div>
+                <div class="therapy-inner-div">
+                    <img src="https://assets-global.website-files.com/62ef010408977750395b517c/62ef065f1cef285fff21a9fb_ic_bullet_lotus.svg" loading="lazy" alt="Lotus icon"/>
+                    <div class="hero-bullet">Offline programs</div>
+                </div>
+                <div class="therapy-inner-div">
+                    <img src="https://assets-global.website-files.com/62ef010408977750395b517c/62ef065f1cef285fff21a9fb_ic_bullet_lotus.svg" loading="lazy" alt="Lotus icon"/>
+                    <div class="hero-bullet">One-On-One sessions</div>
+                </div>
+                <div class="therapy-inner-div">
+                    <img src="https://assets-global.website-files.com/62ef010408977750395b517c/62ef065f1cef285fff21a9fb_ic_bullet_lotus.svg" loading="lazy" alt="Lotus icon"/>
+                    <div class="hero-bullet">Customised group</div>
+                </div>
             </div>
         <div class="therapy-flex">
             <div class="therapy-flex-1">
@@ -193,7 +210,7 @@
             </div>
             <div class="welcome-image-wrapper">
                 <video width="100%" height="auto" controls autoplay playsinline muted loop>
-                    <source src="./drive-download-20240221T132250Z-001/MVI_7196.MOV" type="video/mp4">
+                    <source src="./Images/IMG_0377.MP4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <!-- <img loading="lazy" src="https://assets-global.website-files.com/62ef010408977750395b517c/62ef354758ad152de80dd69b_img_welcome.jpg" loading="lazy" srcset="https://assets-global.website-files.com/62ef010408977750395b517c/62ef354758ad152de80dd69b_img_welcome-p-500.jpg 500w, https://assets-global.website-files.com/62ef010408977750395b517c/62ef354758ad152de80dd69b_img_welcome-p-800.jpg 800w, https://assets-global.website-files.com/62ef010408977750395b517c/62ef354758ad152de80dd69b_img_welcome-p-1080.jpg 1080w, https://assets-global.website-files.com/62ef010408977750395b517c/62ef354758ad152de80dd69b_img_welcome.jpg 1170w" alt="Mom and baby" /> -->
@@ -230,11 +247,11 @@
         <div class="container">
             <div class="help-and-methods-div">
                     <div class="div-help-img">
-                        <img loading="lazy" src="./drive-download-20240221T132250Z-001/IMG_7189.JPG"/>
+                        <img loading="lazy" src="./Images/IMG_7189.JPG"/>
                     </div>
                     <div class="div-help">
                         <h2 class="heading services">
-                            We <span class="text-span-2">Help</span>
+                            We <span class="text-span-2">Work</span>
                             With
                         </h2>
                         <ul role="list" class="list">
@@ -270,7 +287,7 @@
                     </div>
                     
                     <div class="div-methods-img">
-                        <img loading="lazy" src="./drive-download-20240221T132250Z-001/IMG_7231.JPG" alt="Mom and son"/>
+                        <img loading="lazy" src="./Images/IMG_7231.JPG" alt="Mom and son"/>
                     </div>
             </div>
         </div>
@@ -282,7 +299,8 @@
                         For your convenience, we offer sessions both in-person and via telehealth. <br/>
                         <span class="text-span-3">Ready to get started? Book an appointment now.</span>
                     </div>
-                    <button class="button-3 w-button">Book an Appointment</button>
+                    <button class="button-3 w-button" id="appointmentButton">Book an Appointment</button>
+
             </div>
             
      </div>
@@ -399,7 +417,7 @@
                     <div class="design-inner">
                             <div class="text-block-3">
                                 ©2024 The Art Trajectory Services. All Rights Reserved. <br/>
-                                Designed by <span class="text-span-7">Gourav Narvariya</span>
+                                Designed by <a href="https://www.linkedin.com/in/gouravnarvariya/" target="_blank"><span class="text-span-7">Gourav Narvariya</span> </a>
                             </div>
                         
                         <!-- <div  class="div-block-11">

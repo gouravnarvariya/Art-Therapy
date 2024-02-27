@@ -392,14 +392,12 @@ p.paragraph-quote {
     margin-bottom: 20px;
     font-weight: 500;
     color: var(--text-color);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .red-text {
     color: red;
   }
-  body::-webkit-scrollbar {
-    display: none;
-  }
+ 
   .potential-div h1 {
     opacity: 1;
     /* transition: opacity 1s ease-in-out; */
@@ -528,10 +526,30 @@ padding: 20px 10px;
 .item p {
     text-align: left;
     padding-left: 30px;
+    font-size: 1rem;
 }
 .item h1 {
     padding-top: 10px;
     text-align: left;
     padding-left: 30px;
+    font-size: 1rem;
+
+}
+
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.contact-html {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+.program-section {
+    display: block;
+  }
+.thereapy-flex-desktop {
+    display: none;
+}
+.quote-section {
+    height: 100vh;
 }
 }

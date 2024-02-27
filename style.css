@@ -217,7 +217,7 @@ body {
 
 .connect-text-flex {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   width: 100%;
   align-items: center;
 }
@@ -237,13 +237,13 @@ body {
 }
 
 .therapy-inner-div {
-  flex: 0 0 48%;
+  /* flex: 0 0 48%; */
   display: flex;
   gap: 10px;
 }
 
 .hero-bullet {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.3rem;
 }
 
@@ -302,7 +302,7 @@ body {
   background-position: 100% 100%;
   background-size: auto;
   background-repeat: no-repeat;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .quote-div {
@@ -310,6 +310,7 @@ body {
   display: flex;
   /* flex-direction: column; */
   align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -337,13 +338,14 @@ body {
 }
 
 .quote-text-div {
-text-align: center;
+text-align: left;
 }
 
 .quote-text-div h1 span {
-color: var(--text-color);
-font-size: 4rem;
-font-family: 'Cagliostro';
+  color: var(--text-color);
+  font-size: 2.9rem;
+  font-family: auto;
+  font-weight: 100;
 }
 
 .quote-text-span em {
@@ -824,7 +826,7 @@ color: var(--text-color);
   color: var(--sage);
   font-family: "Allura";
   font-size: 5rem;
-  color: var(--secondary-color);
+  color: var(--text-color);
 
 }
 
@@ -838,6 +840,17 @@ color: var(--text-color);
   display: flex;
   flex-direction: column;
   gap: 20px;
+  flex: 0 0;
+}
+
+.text-span-12 {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.team-member-wrapper img {
+  border-radius: 50%;
 }
 
 .team-member-text {
@@ -858,11 +871,7 @@ color: var(--text-color);
   line-height: 30px;
 }
 
-.text-span-12 {
-  color: var(--secondary-color);
-  font-size: 14px;
-  line-height: 30px;
-}
+
 
 .text-span-13 {
   color: var(--dim-grey);
@@ -962,18 +971,27 @@ color: var(--text-color);
 /* member 1  member 1   member 1   member 1   member 1   member 1 member 1  */
 
 .color-sec {
-  color: var(--secondary-color);
- 
+  color: var(--text-color);
 }
 
 .member-div-flex {
   display: flex;
   padding: 100px 0px;
+  gap: 100px;
 }
 
 .member-image-div {
   flex: 0 0 49%;
 }
+
+.member-image-div-1 img {
+  border-radius: 50%;
+}
+.text-span-11  span{ 
+  margin-left: 5px;}
+  .text-span-13 span {
+      margin-left: 5px;
+  }
 
 .member-data-div h1 {
   color: var(--sage);
@@ -982,7 +1000,7 @@ color: var(--text-color);
   margin-bottom: 30px;
   font-size: 5rem;
   font-family: "Allura";
-  color: var(--secondary-color);
+  color: var(--text-color);
 }
 
 .member-1-text-add {
@@ -1100,15 +1118,15 @@ width: 10%;
 
 
 .quote-text-div p {
-  font-size: 1.3rem;
+  font-size: 2rem;
     font-family: 'Cagliostro';
     text-align: center;
-    line-height: 1.7rem;
+    line-height: 2.7rem;
 
 }
 
 .quote-text-div p span {
-  font-size: 1.7rem;
+  font-size: 2.7rem;
     font-family: 'Allura';
     text-align: center;
     margin-bottom: 20px;
@@ -1120,4 +1138,91 @@ width: 10%;
 
 
 
+body::-webkit-scrollbar {
+  display: none;
+}
 
+body::-webkit-scrollbar-button {
+  display: none;
+}
+
+body {
+  -ms-overflow-style:none;
+}
+
+.contact-html {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.therapy-flex {
+  display: none;
+}
+
+.thereapy-flex-desktop {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+
+.testimonial-heading {
+  text-align: center;
+}
+.testimonial-heading h1 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+.testimonial-heading p {
+font-size: 1.7rem;
+color: var(--dim-grey);
+}
+.text-span-testimonial {
+  color: var(--text-color);
+  font-family: 'Allura';
+  font-size: 5.3rem;
+}
+.testimonial-carousel {
+  padding: 10px 0px;
+}
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  display: none;
+}
+.owl-theme .owl-dots, .owl-theme  {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  width: 5%;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span    {
+  background-color: var(--text-color);
+}
+.item {
+padding: 20px 10px;
+}
+
+.item h2 {
+  text-align: left;
+  font-size: 5rem;
+  font-family: cursive;
+  line-height: 2.3rem;
+  color: var(--text-color);
+}
+.item p {
+  text-align: left;
+  padding-left: 30px;
+  font-size: 1.2rem;
+}
+.item h1 {
+  padding-top: 10px;
+  text-align: left;
+  padding-left: 30px;
+  font-size: 1.2rem;
+
+}

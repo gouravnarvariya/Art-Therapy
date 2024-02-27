@@ -42,3 +42,15 @@ toggleMenu.addEventListener('click', () => {
     showBar.classList.toggle("showNavbar");
     navbarbtnflex.classList.toggle("changeColor");
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var scrollButton = document.getElementById('contactButton');
+    var targetDiv = document.getElementById('section1');
+
+    scrollButton.addEventListener('click', function () {
+        // Scroll to the target div smoothly
+        targetDiv.scrollIntoView({ behavior: 'smooth' });
+    });
+});
