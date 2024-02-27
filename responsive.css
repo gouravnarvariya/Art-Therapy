@@ -55,6 +55,8 @@
     ul.show-navbar-ul li a {
         /* color: #ededed; */
         color: #272725;
+        display: block;
+        width: 100%;
         
     }
 
